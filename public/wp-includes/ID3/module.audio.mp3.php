@@ -8,8 +8,8 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio.mp3.php                                        //
-// module for analyzing MP3 files                              //
+// modules.audio.mp3.php                                        //
+// modules for analyzing MP3 files                              //
 // dependencies: NONE                                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////

@@ -8,8 +8,8 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.tag.apetag.php                                       //
-// module for analyzing APE tags                               //
+// modules.tag.apetag.php                                       //
+// modules for analyzing APE tags                               //
 // dependencies: NONE                                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////

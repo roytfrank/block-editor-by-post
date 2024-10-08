@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   count: () => (/* binding */ count)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/defaultSettings.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/defaultSettings.js
 /** @typedef {import('./index').WPWordCountStrategy} WPWordCountStrategy */
 
 /** @typedef {Partial<{type: WPWordCountStrategy, shortcodes: string[]}>} WPWordCountL10n */
@@ -144,7 +144,7 @@ const defaultSettings = {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripTags.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/stripTags.js
 /**
  * Replaces items matched in the regex with new line
  *
@@ -157,7 +157,7 @@ function stripTags(settings, text) {
   return text.replace(settings.HTMLRegExp, '\n');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/transposeAstralsToCountableChar.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/transposeAstralsToCountableChar.js
 /**
  * Replaces items matched in the regex with character.
  *
@@ -170,7 +170,7 @@ function transposeAstralsToCountableChar(settings, text) {
   return text.replace(settings.astralRegExp, 'a');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripHTMLEntities.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/stripHTMLEntities.js
 /**
  * Removes items matched in the regex.
  *
@@ -183,7 +183,7 @@ function stripHTMLEntities(settings, text) {
   return text.replace(settings.HTMLEntityRegExp, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripConnectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/stripConnectors.js
 /**
  * Replaces items matched in the regex with spaces.
  *
@@ -196,7 +196,7 @@ function stripConnectors(settings, text) {
   return text.replace(settings.connectorRegExp, ' ');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripRemovables.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/stripRemovables.js
 /**
  * Removes items matched in the regex.
  *
@@ -209,7 +209,7 @@ function stripRemovables(settings, text) {
   return text.replace(settings.removeRegExp, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripHTMLComments.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/stripHTMLComments.js
 /**
  * Removes items matched in the regex.
  *
@@ -222,7 +222,7 @@ function stripHTMLComments(settings, text) {
   return text.replace(settings.HTMLcommentRegExp, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripShortcodes.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/stripShortcodes.js
 /**
  * Replaces items matched in the regex with a new line.
  *
@@ -238,7 +238,7 @@ function stripShortcodes(settings, text) {
   return text;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/stripSpaces.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/stripSpaces.js
 /**
  * Replaces items matched in the regex with spaces.
  *
@@ -251,7 +251,7 @@ function stripSpaces(settings, text) {
   return text.replace(settings.spaceRegExp, ' ');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/transposeHTMLEntitiesToCountableChars.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/transposeHTMLEntitiesToCountableChars.js
 /**
  * Replaces items matched in the regex with a single character.
  *
@@ -264,7 +264,7 @@ function transposeHTMLEntitiesToCountableChars(settings, text) {
   return text.replace(settings.HTMLEntityRegExp, 'a');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/wordcount/build-modules/index.js
 /**
  * Internal dependencies
  */

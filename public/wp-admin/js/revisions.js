@@ -12,7 +12,7 @@ window.wp = window.wp || {};
 (function($) {
 	var revisions;
 	/**
-	 * Expose the module in window.wp.revisions.
+	 * Expose the modules in window.wp.revisions.
 	 */
 	revisions = wp.revisions = { model: {}, view: {}, controller: {} };
 

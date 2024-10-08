@@ -2153,7 +2153,7 @@ $( function( $ ) {
 /**
  * Freeze animated plugin icons when reduced motion is enabled.
  *
- * When the user has enabled the 'prefers-reduced-motion' setting, this module
+ * When the user has enabled the 'prefers-reduced-motion' setting, this modules
  * stops animations for all GIFs on the page with the class 'plugin-icon' or
  * plugin icon images in the update plugins table.
  *

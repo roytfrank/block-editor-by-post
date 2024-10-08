@@ -497,7 +497,7 @@ function wp_install_maybe_enable_pretty_permalinks() {
 	 * The first is designed for mod_rewrite or nginx rewriting.
 	 *
 	 * The second is PATHINFO-based permalinks for web server configurations
-	 * without a true rewrite module enabled.
+	 * without a true rewrite modules enabled.
 	 */
 	$permalink_structures = array(
 		'/%year%/%monthnum%/%day%/%postname%/',

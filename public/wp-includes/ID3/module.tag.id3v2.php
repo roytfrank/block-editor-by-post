@@ -8,16 +8,16 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 ///                                                            //
-// module.tag.id3v2.php                                        //
-// module for analyzing ID3v2 tags                             //
-// dependencies: module.tag.id3v1.php                          //
+// modules.tag.id3v2.php                                        //
+// modules for analyzing ID3v2 tags                             //
+// dependencies: modules.tag.id3v1.php                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////
 
 if (!defined('GETID3_INCLUDEPATH')) { // prevent path-exposing attacks that access modules directly on public webservers
 	exit;
 }
-getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.tag.id3v1.php', __FILE__, true);
+getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.tag.id3v1.php', __FILE__, true);
 
 class getid3_id3v2 extends getid3_handler
 {

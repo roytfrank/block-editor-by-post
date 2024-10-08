@@ -17,7 +17,7 @@
  * @return string Returns the block content.
  */
 function render_block_core_file( $attributes, $content ) {
-	// If it's interactive, enqueue the script module and add the directives.
+	// If it's interactive, enqueue the script modules and add the directives.
 	if ( ! empty( $attributes['displayPreview'] ) ) {
 		$suffix = wp_scripts_get_suffix();
 		if ( defined( 'IS_GUTENBERG_PLUGIN' ) && IS_GUTENBERG_PLUGIN ) {

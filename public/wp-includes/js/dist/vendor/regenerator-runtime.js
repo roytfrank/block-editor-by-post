@@ -725,14 +725,14 @@ var runtime = (function (exports) {
     }
   };
 
-  // Regardless of whether this script is executing as a CommonJS module
+  // Regardless of whether this script is executing as a CommonJS modules
   // or not, return the runtime object so that we can declare the variable
-  // regeneratorRuntime in the outer scope, which allows this module to be
+  // regeneratorRuntime in the outer scope, which allows this modules to be
   // injected easily by `bin/regenerator --include-runtime script.js`.
   return exports;
 
 }(
-  // If this script is executing as a CommonJS module, use module.exports
+  // If this script is executing as a CommonJS modules, use modules.exports
   // as the regeneratorRuntime namespace. Otherwise create a new empty
   // object. Either way, the resulting object will be used to initialize
   // the regeneratorRuntime variable at the top of this file.
@@ -742,7 +742,7 @@ var runtime = (function (exports) {
 try {
   regeneratorRuntime = runtime;
 } catch (accidentalStrictMode) {
-  // This module should not be running in strict mode, so the above
+  // This modules should not be running in strict mode, so the above
   // assignment should always work unless something is misconfigured. Just
   // in case runtime.js accidentally runs in strict mode, in modern engines
   // we can explicitly access globalThis. In older engines we can escape

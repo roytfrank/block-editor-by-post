@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -61,7 +61,7 @@ function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else i
 const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/svg/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-modules/svg/index.js
 /**
  * External dependencies
  */
@@ -175,16 +175,16 @@ const SVG = (0,external_wp_element_namespaceObject.forwardRef)(
 });
 SVG.displayName = 'SVG';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/horizontal-rule/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-modules/horizontal-rule/index.js
 const HorizontalRule = 'hr';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/block-quotation/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-modules/block-quotation/index.js
 const BlockQuotation = 'blockquote';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/view/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-modules/view/index.js
 const View = 'div';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/primitives/build-modules/index.js
 
 
 

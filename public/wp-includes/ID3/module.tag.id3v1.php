@@ -8,8 +8,8 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.tag.id3v1.php                                        //
-// module for analyzing ID3v1 tags                             //
+// modules.tag.id3v1.php                                        //
+// modules for analyzing ID3v1 tags                             //
 // dependencies: NONE                                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////

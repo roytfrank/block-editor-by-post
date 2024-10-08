@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -70,7 +70,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keycodes/build-module/platform.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/keycodes/build-modules/platform.js
 /**
  * Return true if platform is MacOS.
  *
@@ -91,7 +91,7 @@ function isAppleOS(_window = null) {
   return platform.indexOf('Mac') !== -1 || ['iPad', 'iPhone'].includes(platform);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/keycodes/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/keycodes/build-modules/index.js
 /**
  * Note: The order of the modifier keys in many of the [foo]Shortcut()
  * functions in this file are intentional and should not be changed. They're

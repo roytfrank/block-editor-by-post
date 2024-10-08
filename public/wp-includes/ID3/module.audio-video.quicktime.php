@@ -8,18 +8,18 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio-video.quicktime.php                            //
-// module for analyzing Quicktime and MP3-in-MP4 files         //
-// dependencies: module.audio.mp3.php                          //
-// dependencies: module.tag.id3v2.php                          //
+// modules.audio-video.quicktime.php                            //
+// modules for analyzing Quicktime and MP3-in-MP4 files         //
+// dependencies: modules.audio.mp3.php                          //
+// dependencies: modules.tag.id3v2.php                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////
 
 if (!defined('GETID3_INCLUDEPATH')) { // prevent path-exposing attacks that access modules directly on public webservers
 	exit;
 }
-getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio.mp3.php', __FILE__, true);
-getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.tag.id3v2.php', __FILE__, true); // needed for ISO 639-2 language code lookup
+getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio.mp3.php', __FILE__, true);
+getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.tag.id3v2.php', __FILE__, true); // needed for ISO 639-2 language code lookup
 
 class getid3_quicktime extends getid3_handler
 {
@@ -1554,7 +1554,7 @@ $this->warning('incomplete/incorrect handling of "stsd" with Parrot metadata in 
 					break;
 
 				case 'ID32': // ID3v2
-					getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.tag.id3v2.php', __FILE__, true);
+					getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.tag.id3v2.php', __FILE__, true);
 
 					$getid3_temp = new getID3();
 					$getid3_temp->openfile($this->getid3->filename, $this->getid3->info['filesize'], $this->getid3->fp);
@@ -1678,7 +1678,7 @@ $this->warning('incomplete/incorrect handling of "stsd" with Parrot metadata in 
 					}
 					break;
 				case 'NCTG': // Nikon - https://exiftool.org/TagNames/Nikon.html#NCTG
-					getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.tag.nikon-nctg.php', __FILE__, true);
+					getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.tag.nikon-nctg.php', __FILE__, true);
 					$nikonNCTG = new getid3_tag_nikon_nctg($this->getid3);
 
 					$atom_structure['data'] = $nikonNCTG->parse($atom_data);

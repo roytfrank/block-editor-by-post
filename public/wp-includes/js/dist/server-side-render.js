@@ -83,30 +83,30 @@ module.exports = function equal(a, b) {
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
+/******/ 	// The modules cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
+/******/ 		// Check if modules is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new modules (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			// no modules.id needed
+/******/ 			// no modules.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
+/******/
+/******/ 		// Execute the modules function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
+/******/
+/******/ 		// Return the exports of the modules
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -119,7 +119,7 @@ module.exports = function equal(a, b) {
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -131,12 +131,12 @@ module.exports = function equal(a, b) {
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -169,7 +169,7 @@ const external_wp_components_namespaceObject = window["wp"]["components"];
 const external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-module/server-side-render.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-modules/server-side-render.js
 /**
  * External dependencies
  */
@@ -385,7 +385,7 @@ function ServerSideRender(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/server-side-render/build-modules/index.js
 /**
  * WordPress dependencies
  */

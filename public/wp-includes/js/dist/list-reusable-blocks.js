@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -15,7 +15,7 @@
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -27,12 +27,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -43,7 +43,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -527,7 +527,7 @@ const external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","blob"]
 const external_wp_blob_namespaceObject = window["wp"]["blob"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-module/utils/export.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-modules/utils/export.js
 /**
  * External dependencies
  */
@@ -573,7 +573,7 @@ async function exportReusableBlock(id) {
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: external ["wp","components"]
 const external_wp_components_namespaceObject = window["wp"]["components"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-module/utils/file.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-modules/utils/file.js
 /**
  * Reads the textual content of the given file.
  *
@@ -590,7 +590,7 @@ function readTextFile(file) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-module/utils/import.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-modules/utils/import.js
 /**
  * WordPress dependencies
  */
@@ -639,7 +639,7 @@ async function importReusableBlock(file) {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-module/components/import-form/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-modules/components/import-form/index.js
 /**
  * WordPress dependencies
  */
@@ -732,7 +732,7 @@ function ImportForm({
 }
 /* harmony default export */ const import_form = ((0,external_wp_compose_namespaceObject.withInstanceId)(ImportForm));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-module/components/import-dropdown/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-modules/components/import-dropdown/index.js
 /**
  * WordPress dependencies
  */
@@ -771,7 +771,7 @@ function ImportDropdown({
 }
 /* harmony default export */ const import_dropdown = (ImportDropdown);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/list-reusable-blocks/build-modules/index.js
 /**
  * WordPress dependencies
  */

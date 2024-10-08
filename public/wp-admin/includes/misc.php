@@ -7,11 +7,11 @@
  */
 
 /**
- * Returns whether the server is running Apache with the mod_rewrite module loaded.
+ * Returns whether the server is running Apache with the mod_rewrite modules loaded.
  *
  * @since 2.0.0
  *
- * @return bool Whether the server is running Apache with the mod_rewrite module loaded.
+ * @return bool Whether the server is running Apache with the mod_rewrite modules loaded.
  */
 function got_mod_rewrite() {
 	$got_rewrite = apache_mod_loaded( 'mod_rewrite', true );

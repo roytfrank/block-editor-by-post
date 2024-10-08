@@ -8,8 +8,8 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio.ac3.php                                        //
-// module for analyzing AC-3 (aka Dolby Digital) audio files   //
+// modules.audio.ac3.php                                        //
+// modules for analyzing AC-3 (aka Dolby Digital) audio files   //
 // dependencies: NONE                                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////

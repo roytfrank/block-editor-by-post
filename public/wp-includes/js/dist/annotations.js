@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-modules/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -52,7 +52,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   __experimentalGetAnnotationsForRichText: () => (__experimentalGetAnnotationsForRichText)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/annotations/build-modules/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -66,7 +66,7 @@ __webpack_require__.d(actions_namespaceObject, {
 const external_wp_richText_namespaceObject = window["wp"]["richText"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/store/constants.js
 /**
  * The identifier for the data store.
  *
@@ -74,7 +74,7 @@ const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
  */
 const STORE_NAME = 'core/annotations';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/annotation.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/format/annotation.js
 /**
  * WordPress dependencies
  */
@@ -248,7 +248,7 @@ const annotation = {
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/format/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/format/index.js
 /**
  * WordPress dependencies
  */
@@ -268,7 +268,7 @@ const {
 const external_wp_hooks_namespaceObject = window["wp"]["hooks"];
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/block/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/block/index.js
 /**
  * WordPress dependencies
  */
@@ -300,7 +300,7 @@ const addAnnotationClassName = OriginalComponent => {
 };
 (0,external_wp_hooks_namespaceObject.addFilter)('editor.BlockListBlock', 'core/annotations', addAnnotationClassName);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/store/reducer.js
 /**
  * Filters an array based on the predicate, but keeps the reference the same if
  * the array hasn't changed.
@@ -402,7 +402,7 @@ function annotations(state = {}, action) {
 }
 /* harmony default export */ const reducer = (annotations);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/store/selectors.js
 /**
  * WordPress dependencies
  */
@@ -570,7 +570,7 @@ function v4(options, buf, offset) {
 }
 
 /* harmony default export */ const esm_browser_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/store/actions.js
 /**
  * External dependencies
  */
@@ -671,7 +671,7 @@ function __experimentalRemoveAnnotationsBySource(source) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/store/index.js
 /**
  * WordPress dependencies
  */
@@ -703,7 +703,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/annotations/build-modules/index.js
 /**
  * Internal dependencies
  */

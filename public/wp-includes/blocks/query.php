@@ -21,7 +21,7 @@ function render_block_core_query( $attributes, $content, $block ) {
 		&& true === $attributes['enhancedPagination']
 		&& isset( $attributes['queryId'] );
 
-	// Enqueue the script module and add the necessary directives if the block is
+	// Enqueue the script modules and add the necessary directives if the block is
 	// interactive.
 	if ( $is_interactive ) {
 		$suffix = wp_scripts_get_suffix();

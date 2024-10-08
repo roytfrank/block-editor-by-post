@@ -145,30 +145,30 @@ module.exports = commandScore;
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
+/******/ 	// The modules cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
+/******/ 		// Check if modules is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new modules (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			// no modules.id needed
+/******/ 			// no modules.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
+/******/
+/******/ 		// Execute the modules function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
+/******/
+/******/ 		// Return the exports of the modules
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -181,7 +181,7 @@ module.exports = commandScore;
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -193,12 +193,12 @@ module.exports = commandScore;
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -209,12 +209,12 @@ module.exports = commandScore;
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -232,7 +232,7 @@ __webpack_require__.d(__webpack_exports__, {
   useCommandLoader: () => (/* reexport */ useCommandLoader)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-modules/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -244,7 +244,7 @@ __webpack_require__.d(actions_namespaceObject, {
   unregisterCommandLoader: () => (unregisterCommandLoader)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-modules/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -254,7 +254,7 @@ __webpack_require__.d(selectors_namespaceObject, {
   isOpen: () => (selectors_isOpen)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-module/store/private-actions.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/commands/build-modules/store/private-actions.js
 var private_actions_namespaceObject = {};
 __webpack_require__.r(private_actions_namespaceObject);
 __webpack_require__.d(private_actions_namespaceObject, {
@@ -278,7 +278,7 @@ function _extends() {
 }
 ;// CONCATENATED MODULE: external "React"
 const external_React_namespaceObject = window["React"];
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/primitive/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/primitive/dist/index.modules.js
 function $e42e1063c40fb3ef$export$b9ecd428b558ff10(originalEventHandler, ourEventHandler, { checkForDefaultPrevented: checkForDefaultPrevented = true  } = {}) {
     return function handleEvent(event) {
         originalEventHandler === null || originalEventHandler === void 0 || originalEventHandler(event);
@@ -291,7 +291,7 @@ function $e42e1063c40fb3ef$export$b9ecd428b558ff10(originalEventHandler, ourEven
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-compose-refs/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-compose-refs/dist/index.modules.js
 
 
 
@@ -323,7 +323,7 @@ function $e42e1063c40fb3ef$export$b9ecd428b558ff10(originalEventHandler, ourEven
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-context/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-context/dist/index.modules.js
 
 
 
@@ -452,7 +452,7 @@ function $c512c27ab02ef895$export$fd42f52fd3ae1109(rootComponentName, defaultCon
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-use-layout-effect/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-use-layout-effect/dist/index.modules.js
 
 
 
@@ -469,7 +469,7 @@ function $c512c27ab02ef895$export$fd42f52fd3ae1109(rootComponentName, defaultCon
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-id/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-id/dist/index.modules.js
 
 
 
@@ -494,7 +494,7 @@ function $1746a345f3d73bb7$export$f680877a34711e37(deterministicId) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-use-callback-ref/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-use-callback-ref/dist/index.modules.js
 
 
 
@@ -518,7 +518,7 @@ function $1746a345f3d73bb7$export$f680877a34711e37(deterministicId) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-use-controllable-state/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-use-controllable-state/dist/index.modules.js
 
 
 
@@ -575,7 +575,7 @@ function $71cd76cc60e0454e$var$useUncontrolledState({ defaultProp: defaultProp ,
 ;// CONCATENATED MODULE: external "ReactDOM"
 const external_ReactDOM_namespaceObject = window["ReactDOM"];
 var external_ReactDOM_default = /*#__PURE__*/__webpack_require__.n(external_ReactDOM_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-slot/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-slot/dist/index.modules.js
 
 
 
@@ -662,7 +662,7 @@ const $5e63c961fc1ce211$export$be92b6f5f03c0fe9 = (/* unused pure expression or 
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-primitive/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-primitive/dist/index.modules.js
 
 
 
@@ -756,7 +756,7 @@ const $8927f6f2acc4f386$var$NODES = [
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-use-escape-keydown/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-use-escape-keydown/dist/index.modules.js
 
 
 
@@ -783,7 +783,7 @@ const $8927f6f2acc4f386$var$NODES = [
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-dismissable-layer/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-dismissable-layer/dist/index.modules.js
 
 
 
@@ -1060,7 +1060,7 @@ const $5cb92bef7577960e$export$aecb2ddcb55c95be = (/* unused pure expression or 
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-focus-scope/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-focus-scope/dist/index.modules.js
 
 
 
@@ -1328,7 +1328,7 @@ const $d3863c46a17e8a28$export$be92b6f5f03c0fe9 = (/* unused pure expression or 
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-portal/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/node_modules/@radix-ui/react-portal/dist/index.modules.js
 
 
 
@@ -1358,7 +1358,7 @@ const $f1701beae083dbae$export$602eac185826482c = /*#__PURE__*/ (0,external_Reac
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-presence/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-presence/dist/index.modules.js
 
 
 
@@ -1498,7 +1498,7 @@ $921a889cee6df7e8$export$99c2b779aa4e8b8b.displayName = 'Presence';
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-focus-guards/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-focus-guards/dist/index.modules.js
 
 
 
@@ -2771,7 +2771,7 @@ var suppressOthers = function (originalTarget, parentNode, markerName) {
     return (supportsInert() ? inertOthers : hideOthers)(originalTarget, parentNode, markerName);
 };
 
-;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/dist/index.module.js
+;// CONCATENATED MODULE: ./node_modules/@radix-ui/react-dialog/dist/index.modules.js
 
 
 
@@ -3148,7 +3148,7 @@ const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
 const external_wp_components_namespaceObject = window["wp"]["components"];
 ;// CONCATENATED MODULE: external ["wp","keyboardShortcuts"]
 const external_wp_keyboardShortcuts_namespaceObject = window["wp"]["keyboardShortcuts"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/icon/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-modules/icon/index.js
 /**
  * WordPress dependencies
  */
@@ -3184,7 +3184,7 @@ function Icon({
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/search.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-modules/library/search.js
 /**
  * WordPress dependencies
  */
@@ -3199,7 +3199,7 @@ const search = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_search = (search);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/store/reducer.js
 /**
  * WordPress dependencies
  */
@@ -3311,7 +3311,7 @@ const reducer = (0,external_wp_data_namespaceObject.combineReducers)({
 });
 /* harmony default export */ const store_reducer = (reducer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/store/actions.js
 /** @typedef {import('@wordpress/keycodes').WPKeycodeModifier} WPKeycodeModifier */
 
 /**
@@ -3421,7 +3421,7 @@ function actions_close() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/store/selectors.js
 /**
  * WordPress dependencies
  */
@@ -3475,7 +3475,7 @@ function getContext(state) {
   return state.context;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/private-actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/store/private-actions.js
 /**
  * Sets the active context.
  *
@@ -3492,7 +3492,7 @@ function setContext(context) {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/lock-unlock.js
 /**
  * WordPress dependencies
  */
@@ -3502,7 +3502,7 @@ const {
   unlock
 } = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/commands');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/store/index.js
 /**
  * WordPress dependencies
  */
@@ -3541,7 +3541,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 (0,external_wp_data_namespaceObject.register)(store);
 unlock(store).registerPrivateActions(private_actions_namespaceObject);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/components/command-menu.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/components/command-menu.js
 /**
  * External dependencies
  */
@@ -3831,7 +3831,7 @@ function CommandMenu() {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/hooks/use-command-context.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/hooks/use-command-context.js
 /**
  * WordPress dependencies
  */
@@ -3869,7 +3869,7 @@ function useCommandContext(context) {
   }, [setContext]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/private-apis.js
 /**
  * Internal dependencies
  */
@@ -3884,7 +3884,7 @@ lock(privateApis, {
   useCommandContext: useCommandContext
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/hooks/use-command.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/hooks/use-command.js
 /**
  * WordPress dependencies
  */
@@ -3944,7 +3944,7 @@ function useCommand(command) {
   }, [command.name, command.label, command.searchLabel, command.icon, command.context, command.disabled, registerCommand, unregisterCommand]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/hooks/use-command-loader.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/hooks/use-command-loader.js
 /**
  * WordPress dependencies
  */
@@ -4045,7 +4045,7 @@ function useCommandLoader(loader) {
   }, [loader.name, loader.hook, loader.context, loader.disabled, registerCommandLoader, unregisterCommandLoader]);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/commands/build-modules/index.js
 
 
 

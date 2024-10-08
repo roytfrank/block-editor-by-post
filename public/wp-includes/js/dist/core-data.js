@@ -586,30 +586,30 @@ module.exports = window["wp"]["isShallowEqual"];
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
+/******/ 	// The modules cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
+/******/ 		// Check if modules is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new modules (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			// no modules.id needed
+/******/ 			// no modules.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
+/******/
+/******/ 		// Execute the modules function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
+/******/
+/******/ 		// Return the exports of the modules
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -622,7 +622,7 @@ module.exports = window["wp"]["isShallowEqual"];
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -634,12 +634,12 @@ module.exports = window["wp"]["isShallowEqual"];
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -650,7 +650,7 @@ module.exports = window["wp"]["isShallowEqual"];
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -676,7 +676,7 @@ __webpack_require__.d(__webpack_exports__, {
   useResourcePermissions: () => (/* reexport */ useResourcePermissions)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/actions.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-modules/actions.js
 var build_module_actions_namespaceObject = {};
 __webpack_require__.r(build_module_actions_namespaceObject);
 __webpack_require__.d(build_module_actions_namespaceObject, {
@@ -708,7 +708,7 @@ __webpack_require__.d(build_module_actions_namespaceObject, {
   undo: () => (undo)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-modules/selectors.js
 var build_module_selectors_namespaceObject = {};
 __webpack_require__.r(build_module_selectors_namespaceObject);
 __webpack_require__.d(build_module_selectors_namespaceObject, {
@@ -765,7 +765,7 @@ __webpack_require__.d(build_module_selectors_namespaceObject, {
   isSavingEntityRecord: () => (isSavingEntityRecord)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/private-selectors.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-modules/private-selectors.js
 var private_selectors_namespaceObject = {};
 __webpack_require__.r(private_selectors_namespaceObject);
 __webpack_require__.d(private_selectors_namespaceObject, {
@@ -774,7 +774,7 @@ __webpack_require__.d(private_selectors_namespaceObject, {
   getUndoManager: () => (getUndoManager)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-module/resolvers.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/core-data/build-modules/resolvers.js
 var resolvers_namespaceObject = {};
 __webpack_require__.r(resolvers_namespaceObject);
 __webpack_require__.d(resolvers_namespaceObject, {
@@ -812,9 +812,9 @@ var es6 = __webpack_require__(7734);
 var es6_default = /*#__PURE__*/__webpack_require__.n(es6);
 ;// CONCATENATED MODULE: external ["wp","compose"]
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
-// EXTERNAL MODULE: ./node_modules/@wordpress/undo-manager/build-module/index.js
+// EXTERNAL MODULE: ./node_modules/@wordpress/undo-manager/build-modules/index.js
 var build_module = __webpack_require__(6689);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/if-matching-action.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/if-matching-action.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -834,7 +834,7 @@ const ifMatchingAction = isMatch => reducer => (state, action) => {
 };
 /* harmony default export */ const if_matching_action = (ifMatchingAction);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/replace-action.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/replace-action.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -850,7 +850,7 @@ const replaceAction = replacer => reducer => (state, action) => {
 };
 /* harmony default export */ const replace_action = (replaceAction);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/conservative-map-item.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/conservative-map-item.js
 /**
  * External dependencies
  */
@@ -896,7 +896,7 @@ function conservativeMapItem(item, nextItem) {
   return result;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/on-sub-key.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/on-sub-key.js
 /** @typedef {import('../types').AnyFunction} AnyFunction */
 
 /**
@@ -1520,7 +1520,7 @@ const external_wp_url_namespaceObject = window["wp"]["url"];
 ;// CONCATENATED MODULE: external ["wp","deprecated"]
 const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/set-nested-value.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/set-nested-value.js
 /**
  * Sets the value at path of object.
  * If a portion of path doesn’t exist, it’s created.
@@ -1564,7 +1564,7 @@ function setNestedValue(object, path, value) {
   return object;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/get-nested-value.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/get-nested-value.js
 /**
  * Helper util to return a value from a certain path of the object.
  * Path is specified as either:
@@ -1589,7 +1589,7 @@ function getNestedValue(object, path, defaultValue) {
   return value !== undefined ? value : defaultValue;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/queried-data/actions.js
 /**
  * Returns an action object used in signalling that items have been received.
  *
@@ -1646,7 +1646,7 @@ function receiveQueriedItems(items, query = {}, edits, meta) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/batch/default-processor.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/batch/default-processor.js
 /**
  * WordPress dependencies
  */
@@ -1724,7 +1724,7 @@ async function defaultProcessor(requests) {
   return results;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/batch/create-batch.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/batch/create-batch.js
 /**
  * Internal dependencies
  */
@@ -1889,7 +1889,7 @@ class ObservableSet {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/name.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/name.js
 /**
  * The reducer key used by core data in store registration.
  * This is defined in a separate file to avoid cycle-dependency
@@ -1898,7 +1898,7 @@ class ObservableSet {
  */
 const STORE_NAME = 'core';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/actions.js
 /**
  * External dependencies
  */
@@ -2715,7 +2715,7 @@ const receiveRevisions = (kind, name, recordKey, records, query, invalidateCache
   });
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/entities.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/entities.js
 /**
  * External dependencies
  */
@@ -3225,7 +3225,7 @@ const getOrLoadEntitiesConfig = (kind, name) => async ({
   return configs;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/get-normalized-comma-separable.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/get-normalized-comma-separable.js
 /**
  * Given a value which can be specified as one or the other of a comma-separated
  * string or an array, returns a value normalized to an array of strings, or
@@ -3245,7 +3245,7 @@ function getNormalizedCommaSeparable(value) {
 }
 /* harmony default export */ const get_normalized_comma_separable = (getNormalizedCommaSeparable);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/with-weak-map-cache.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/with-weak-map-cache.js
 /**
  * Given a function, returns an enhanced function which caches the result and
  * tracks in WeakMap. The result is only cached if the original function is
@@ -3276,7 +3276,7 @@ function withWeakMapCache(fn) {
 }
 /* harmony default export */ const with_weak_map_cache = (withWeakMapCache);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/get-query-parts.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/queried-data/get-query-parts.js
 /**
  * WordPress dependencies
  */
@@ -3380,7 +3380,7 @@ function getQueryParts(query) {
 }
 /* harmony default export */ const get_query_parts = (with_weak_map_cache(getQueryParts));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/queried-data/reducer.js
 /**
  * WordPress dependencies
  */
@@ -3616,7 +3616,7 @@ const queries = (state = {}, action) => {
   queries
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/reducer.js
 /**
  * External dependencies
  */
@@ -4195,7 +4195,7 @@ function defaultTemplates(state = {}, action) {
 // EXTERNAL MODULE: ./node_modules/equivalent-key-map/equivalent-key-map.js
 var equivalent_key_map = __webpack_require__(3249);
 var equivalent_key_map_default = /*#__PURE__*/__webpack_require__.n(equivalent_key_map);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/queried-data/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/queried-data/selectors.js
 /**
  * External dependencies
  */
@@ -4330,7 +4330,7 @@ function getQueriedTotalPages(state, query = {}) {
   return (_state$queries$contex2 = state.queries?.[context]?.[stableKey]?.meta?.totalPages) !== null && _state$queries$contex2 !== void 0 ? _state$queries$contex2 : null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/is-numeric-id.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/is-numeric-id.js
 /**
  * Checks argument to determine if it's a numeric ID.
  * For example, '123' is a numeric ID, but '123abc' is not.
@@ -4342,7 +4342,7 @@ function isNumericID(id) {
   return /^\s*\d+\s*$/.test(id);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/is-raw-attribute.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/is-raw-attribute.js
 /**
  * Checks whether the attribute is a "raw" attribute or not.
  *
@@ -4355,7 +4355,7 @@ function isRawAttribute(entity, attribute) {
   return (entity.rawAttributes || []).includes(attribute);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/selectors.js
 /**
  * WordPress dependencies
  */
@@ -5408,7 +5408,7 @@ const getRevision = (0,external_wp_data_namespaceObject.createSelector)((state, 
   return [state.entities.records?.[kind]?.[name]?.revisions?.[recordKey]?.items?.[context]?.[revisionKey], state.entities.records?.[kind]?.[name]?.revisions?.[recordKey]?.itemIsComplete?.[context]?.[revisionKey]];
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/private-selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/private-selectors.js
 /**
  * WordPress dependencies
  */
@@ -5464,7 +5464,7 @@ function camelCase(input, options) {
 
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 const external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/utils/forward-resolver.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/utils/forward-resolver.js
 /**
  * Higher-order function which forward the resolution to another resolver with the same arguments.
  *
@@ -5479,7 +5479,7 @@ const forwardResolver = resolverName => (...args) => async ({
 };
 /* harmony default export */ const forward_resolver = (forwardResolver);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-link-suggestions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/fetch/__experimental-fetch-link-suggestions.js
 /**
  * WordPress dependencies
  */
@@ -5694,7 +5694,7 @@ const fetchLinkSuggestions = async (search, searchOptions = {}, settings = {}) =
 };
 /* harmony default export */ const _experimental_fetch_link_suggestions = (fetchLinkSuggestions);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/__experimental-fetch-url-data.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/fetch/__experimental-fetch-url-data.js
 /**
  * WordPress dependencies
  */
@@ -5763,7 +5763,7 @@ const fetchUrlData = async (url, options = {}) => {
 };
 /* harmony default export */ const _experimental_fetch_url_data = (fetchUrlData);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/fetch/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/fetch/index.js
 /**
  * External dependencies
  */
@@ -5785,7 +5785,7 @@ async function fetchBlockPatterns() {
   return restPatterns.map(pattern => Object.fromEntries(Object.entries(pattern).map(([key, value]) => [camelCase(key), value])));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/resolvers.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/resolvers.js
 /**
  * External dependencies
  */
@@ -6473,7 +6473,7 @@ const resolvers_getRevision = (kind, name, recordKey, revisionKey, query) => asy
   }
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/utils.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/locks/utils.js
 function deepCopyLocksTreePath(tree, path) {
   const newTree = {
     ...tree
@@ -6535,7 +6535,7 @@ function hasConflictingLock({
   return false;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/locks/reducer.js
 /**
  * Internal dependencies
  */
@@ -6606,7 +6606,7 @@ function locks(state = DEFAULT_STATE, action) {
   return state;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/locks/selectors.js
 /**
  * Internal dependencies
  */
@@ -6647,7 +6647,7 @@ function isLockAvailable(state, store, path, {
   return true;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/engine.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/locks/engine.js
 /**
  * Internal dependencies
  */
@@ -6709,7 +6709,7 @@ function createLocks() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/locks/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/locks/actions.js
 /**
  * Internal dependencies
  */
@@ -6732,7 +6732,7 @@ function createLocksActions() {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/private-apis.js
 /**
  * WordPress dependencies
  */
@@ -6748,7 +6748,7 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 const external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 ;// CONCATENATED MODULE: external ["wp","blockEditor"]
 const external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/footnotes/get-rich-text-values-cached.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/footnotes/get-rich-text-values-cached.js
 /**
  * WordPress dependencies
  */
@@ -6782,7 +6782,7 @@ function getRichTextValuesCached(block) {
   return cache.get(block);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/footnotes/get-footnotes-order.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/footnotes/get-footnotes-order.js
 /**
  * Internal dependencies
  */
@@ -6818,7 +6818,7 @@ function getFootnotesOrder(blocks) {
   return blocks.flatMap(getBlockFootnotesOrder);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/footnotes/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/footnotes/index.js
 /**
  * WordPress dependencies
  */
@@ -6928,7 +6928,7 @@ function updateFootnotesFromMeta(blocks, meta) {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/entity-provider.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/entity-provider.js
 /**
  * WordPress dependencies
  */
@@ -7317,7 +7317,7 @@ function memize(fn, options) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/memoize.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/hooks/memoize.js
 /**
  * External dependencies
  */
@@ -7326,7 +7326,7 @@ function memize(fn, options) {
 // re-export due to restrictive esModuleInterop setting
 /* harmony default export */ const memoize = (memize);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/constants.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/hooks/constants.js
 let Status = /*#__PURE__*/function (Status) {
   Status["Idle"] = "IDLE";
   Status["Resolving"] = "RESOLVING";
@@ -7335,7 +7335,7 @@ let Status = /*#__PURE__*/function (Status) {
   return Status;
 }({});
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-query-select.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/hooks/use-query-select.js
 /**
  * WordPress dependencies
  */
@@ -7441,7 +7441,7 @@ const enrichSelectors = memoize(selectors => {
   return resolvers;
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-entity-record.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/hooks/use-entity-record.js
 /**
  * WordPress dependencies
  */
@@ -7604,7 +7604,7 @@ function __experimentalUseEntityRecord(kind, name, recordId, options) {
   return useEntityRecord(kind, name, recordId, options);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-entity-records.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/hooks/use-entity-records.js
 /**
  * WordPress dependencies
  */
@@ -7709,7 +7709,7 @@ function __experimentalUseEntityRecords(kind, name, queryArgs, options) {
   return useEntityRecords(kind, name, queryArgs, options);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/use-resource-permissions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/hooks/use-resource-permissions.js
 /**
  * WordPress dependencies
  */
@@ -7848,12 +7848,12 @@ function __experimentalUseResourcePermissions(resource, id) {
   return useResourcePermissions(resource, id);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/hooks/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/hooks/index.js
 
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/core-data/build-modules/index.js
 /**
  * WordPress dependencies
  */

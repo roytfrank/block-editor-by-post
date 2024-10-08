@@ -23,7 +23,7 @@
 
 	if ( typeof define === "function" && define.amd ) {
 
-		// AMD. Register as an anonymous module.
+		// AMD. Register as an anonymous modules.
 		define( [
 			"jquery",
 			"./menu",

@@ -125,7 +125,7 @@ class WP_Style_Engine_CSS_Rules_Store {
 	 *
 	 * @param string $selector The CSS selector.
 	 * @param string $rules_group A parent CSS selector in the case of nested CSS, or a CSS nested @rule,
-	 *                            such as `@media (min-width: 80rem)` or `@layer module`.
+	 *                            such as `@media (min-width: 80rem)` or `@layer modules`.
 	 * @return WP_Style_Engine_CSS_Rule|void Returns a WP_Style_Engine_CSS_Rule object,
 	 *                                       or void if the selector is empty.
 	 */

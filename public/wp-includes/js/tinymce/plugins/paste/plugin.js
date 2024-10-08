@@ -975,7 +975,7 @@ var paste = (function (domGlobals) {
                     return c(i, !0);
                   if (u)
                     return u(i, !0);
-                  var a = new Error('Cannot find module \'' + i + '\'');
+                  var a = new Error('Cannot find modules \'' + i + '\'');
                   throw a.code = 'MODULE_NOT_FOUND', a;
                 }
                 var p = n[i] = { exports: {} };

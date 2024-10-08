@@ -10,7 +10,7 @@
 /**
  * Core class used to implement a rewrite component API.
  *
- * The WordPress Rewrite class writes the rewrite module rules to the .htaccess
+ * The WordPress Rewrite class writes the rewrite modules rules to the .htaccess
  * file. It also handles parsing the request to get the correct setup for the
  * WordPress Query class.
  *
@@ -344,7 +344,7 @@ class WP_Rewrite {
 	/**
 	 * Determines whether permalinks are being used.
 	 *
-	 * This can be either rewrite module or permalink in the HTTP query string.
+	 * This can be either rewrite modules or permalink in the HTTP query string.
 	 *
 	 * @since 1.5.0
 	 *
@@ -355,7 +355,7 @@ class WP_Rewrite {
 	}
 
 	/**
-	 * Determines whether permalinks are being used and rewrite module is not enabled.
+	 * Determines whether permalinks are being used and rewrite modules is not enabled.
 	 *
 	 * Means that permalink links are enabled and index.php is in the URL.
 	 *
@@ -373,7 +373,7 @@ class WP_Rewrite {
 	}
 
 	/**
-	 * Determines whether permalinks are being used and rewrite module is enabled.
+	 * Determines whether permalinks are being used and rewrite modules is enabled.
 	 *
 	 * Using permalinks and index.php is not in the URL.
 	 *

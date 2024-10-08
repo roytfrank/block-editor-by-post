@@ -4,7 +4,7 @@
  *
  * This class is implemented using native PHP code.
  *
- * The algorithm used here is mostly lifted from the perl module
+ * The algorithm used here is mostly lifted from the perl modules
  * Algorithm::Diff (version 1.06) by Ned Konz, which is available at:
  * https://cpan.metacpan.org/authors/id/N/NE/NEDKONZ/Algorithm-Diff-1.06.zip
  *

@@ -15,7 +15,7 @@ var twemoji = (function (
   /*jshint maxparams:4 */
 
   var
-    // the exported module object
+    // the exported modules object
     twemoji = {
 
 
