@@ -7,16 +7,16 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio-video.asf.php                                  //
-// module for analyzing ASF, WMA and WMV files                 //
-// dependencies: module.audio-video.riff.php                   //
+// modules.audio-video.asf.php                                  //
+// modules for analyzing ASF, WMA and WMV files                 //
+// dependencies: modules.audio-video.riff.php                   //
 //                                                            ///
 /////////////////////////////////////////////////////////////////
 
 if (!defined('GETID3_INCLUDEPATH')) { // prevent path-exposing attacks that access modules directly on public webservers
 	exit;
 }
-getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio-video.riff.php', __FILE__, true);
+getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio-video.riff.php', __FILE__, true);
 
 class getid3_asf extends getid3_handler
 {

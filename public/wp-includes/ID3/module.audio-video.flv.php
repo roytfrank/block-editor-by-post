@@ -7,13 +7,13 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio-video.flv.php                                  //
-// module for analyzing Shockwave Flash Video files            //
+// modules.audio-video.flv.php                                  //
+// modules for analyzing Shockwave Flash Video files            //
 // dependencies: NONE                                          //
 //                                                             //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-//  FLV module by Seth Kaufman <sethØwhirl-i-gig*com>          //
+//  FLV modules by Seth Kaufman <sethØwhirl-i-gig*com>          //
 //                                                             //
 //  * version 0.1 (26 June 2005)                               //
 //                                                             //

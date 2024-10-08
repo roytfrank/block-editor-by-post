@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -42,7 +42,7 @@ __webpack_require__.d(__webpack_exports__, {
   __dangerousOptInToUnstableAPIsOnlyForCoreModules: () => (/* reexport */ __dangerousOptInToUnstableAPIsOnlyForCoreModules)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/private-apis/build-module/implementation.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/private-apis/build-modules/implementation.js
 /**
  * wordpress/private-apis – the utilities to enable private cross-package
  * exports of private APIs.
@@ -98,7 +98,7 @@ try {
  * private private APIs.
  *
  * @param {string} consent    The consent string.
- * @param {string} moduleName The name of the module that is opting in.
+ * @param {string} moduleName The name of the modules that is opting in.
  * @return {{lock: typeof lock, unlock: typeof unlock}} An object containing the lock and unlock functions.
  */
 const __dangerousOptInToUnstableAPIsOnlyForCoreModules = (consent, moduleName) => {
@@ -199,9 +199,9 @@ const __private = Symbol('Private API ID');
 
 /**
  * Private function to allow the unit tests to allow
- * a mock module to access the private APIs.
+ * a mock modules to access the private APIs.
  *
- * @param {string} name The name of the module.
+ * @param {string} name The name of the modules.
  */
 function allowCoreModule(name) {
   CORE_MODULES_USING_PRIVATE_APIS.push(name);
@@ -226,7 +226,7 @@ function resetRegisteredPrivateApis() {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/private-apis/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/private-apis/build-modules/index.js
 
 
 (window.wp = window.wp || {}).privateApis = __webpack_exports__;

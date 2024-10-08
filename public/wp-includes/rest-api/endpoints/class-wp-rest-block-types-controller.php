@@ -587,7 +587,7 @@ class WP_REST_Block_Types_Controller extends WP_REST_Controller {
 					'readonly'    => true,
 				),
 				'view_script_module_ids' => array(
-					'description' => __( 'Public facing script module IDs.' ),
+					'description' => __( 'Public facing script modules IDs.' ),
 					'type'        => array( 'array' ),
 					'default'     => array(),
 					'items'       => array(

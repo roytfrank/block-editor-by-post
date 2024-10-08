@@ -2076,8 +2076,8 @@ function wp_render_widget_control( $id ) {
 /**
  * Displays a _doing_it_wrong() message for conflicting widget editor scripts.
  *
- * The 'wp-editor' script module is exposed as window.wp.editor. This overrides
- * the legacy TinyMCE editor module which is required by the widgets editor.
+ * The 'wp-editor' script modules is exposed as window.wp.editor. This overrides
+ * the legacy TinyMCE editor modules which is required by the widgets editor.
  * Because of that conflict, these two shouldn't be enqueued together.
  * See https://core.trac.wordpress.org/ticket/53569.
  *

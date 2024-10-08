@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -851,7 +851,7 @@ function parsePath(path) {
 
 ;// CONCATENATED MODULE: external ["wp","url"]
 const external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-module/history.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-modules/history.js
 /**
  * External dependencies
  */
@@ -914,7 +914,7 @@ history_history.getLocationWithParams = getLocationWithParams;
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-module/router.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-modules/router.js
 /**
  * WordPress dependencies
  */
@@ -948,7 +948,7 @@ function RouterProvider({
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-modules/lock-unlock.js
 /**
  * WordPress dependencies
  */
@@ -958,7 +958,7 @@ const {
   unlock
 } = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/router');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-modules/private-apis.js
 /**
  * Internal dependencies
  */
@@ -971,7 +971,7 @@ lock(privateApis, {
   RouterProvider: RouterProvider
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/router/build-modules/index.js
 
 
 (window.wp = window.wp || {}).router = __webpack_exports__;

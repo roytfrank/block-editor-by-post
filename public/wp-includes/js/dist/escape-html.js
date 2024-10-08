@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -48,7 +48,7 @@ __webpack_require__.d(__webpack_exports__, {
   isValidAttributeName: () => (/* binding */ isValidAttributeName)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/escape-html/build-module/escape-greater.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/escape-html/build-modules/escape-greater.js
 /**
  * Returns a string with greater-than sign replaced.
  *
@@ -65,7 +65,7 @@ function __unstableEscapeGreaterThan(value) {
   return value.replace(/>/g, '&gt;');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/escape-html/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/escape-html/build-modules/index.js
 /**
  * Internal dependencies
  */

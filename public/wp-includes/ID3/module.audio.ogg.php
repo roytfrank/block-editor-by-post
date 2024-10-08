@@ -8,16 +8,16 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio.ogg.php                                        //
-// module for analyzing Ogg Vorbis, OggFLAC and Speex files    //
-// dependencies: module.audio.flac.php                         //
+// modules.audio.ogg.php                                        //
+// modules for analyzing Ogg Vorbis, OggFLAC and Speex files    //
+// dependencies: modules.audio.flac.php                         //
 //                                                            ///
 /////////////////////////////////////////////////////////////////
 
 if (!defined('GETID3_INCLUDEPATH')) { // prevent path-exposing attacks that access modules directly on public webservers
 	exit;
 }
-getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio.flac.php', __FILE__, true);
+getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio.flac.php', __FILE__, true);
 
 class getid3_ogg extends getid3_handler
 {

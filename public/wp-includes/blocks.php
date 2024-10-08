@@ -54,7 +54,7 @@ function generate_block_asset_handle( $block_name, $field_name, $index = 0 ) {
 			$asset_handle .= '-view';
 		}
 		if ( str_ends_with( strtolower( $field_name ), 'scriptmodule' ) ) {
-			$asset_handle .= '-script-module';
+			$asset_handle .= '-script-modules';
 		}
 		if ( $index > 0 ) {
 			$asset_handle .= '-' . ( $index + 1 );
@@ -68,7 +68,7 @@ function generate_block_asset_handle( $block_name, $field_name, $index = 0 ) {
 		'script'           => 'script',
 		'style'            => 'style',
 		'viewScript'       => 'view-script',
-		'viewScriptModule' => 'view-script-module',
+		'viewScriptModule' => 'view-script-modules',
 		'viewStyle'        => 'view-style',
 	);
 	$asset_handle   = str_replace( '/', '-', $block_name ) .
@@ -128,19 +128,19 @@ function get_block_asset_url( $path ) {
 }
 
 /**
- * Finds a script module ID for the selected block metadata field. It detects
+ * Finds a script modules ID for the selected block metadata field. It detects
  * when a path to file was provided and optionally finds a corresponding asset
- * file with details necessary to register the script module under with an
- * automatically generated module ID. It returns unprocessed script module
+ * file with details necessary to register the script modules under with an
+ * automatically generated modules ID. It returns unprocessed script modules
  * ID otherwise.
  *
  * @since 6.5.0
  *
  * @param array  $metadata   Block metadata.
  * @param string $field_name Field name to pick from metadata.
- * @param int    $index      Optional. Index of the script module ID to register when multiple
+ * @param int    $index      Optional. Index of the script modules ID to register when multiple
  *                           items passed. Default 0.
- * @return string|false Script module ID or false on failure.
+ * @return string|false Script modules ID or false on failure.
  */
 function register_block_script_module_id( $metadata, $field_name, $index = 0 ) {
 	if ( empty( $metadata[ $field_name ] ) ) {

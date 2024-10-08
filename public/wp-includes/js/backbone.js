@@ -20,7 +20,7 @@
       root.Backbone = factory(root, exports, _, $);
     });
 
-  // Next for Node.js or CommonJS. jQuery may not be needed as a module.
+  // Next for Node.js or CommonJS. jQuery may not be needed as a modules.
   } else if (typeof exports !== 'undefined') {
     var _ = require('underscore'), $;
     try { $ = require('jquery'); } catch (e) {}
@@ -71,7 +71,7 @@
   // Backbone.Events
   // ---------------
 
-  // A module that can be mixed in to *any object* in order to provide it with
+  // A modules that can be mixed in to *any object* in order to provide it with
   // a custom event channel. You may bind a callback to an event with `on` or
   // remove with `off`; `trigger`-ing an event fires all callbacks in
   // succession.

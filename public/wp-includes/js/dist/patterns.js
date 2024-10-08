@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -43,7 +43,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/patterns/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/patterns/build-modules/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -53,7 +53,7 @@ __webpack_require__.d(actions_namespaceObject, {
   setEditingPattern: () => (setEditingPattern)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/patterns/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/patterns/build-modules/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -62,7 +62,7 @@ __webpack_require__.d(selectors_namespaceObject, {
 
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/store/reducer.js
 /**
  * WordPress dependencies
  */
@@ -86,7 +86,7 @@ const external_wp_blocks_namespaceObject = window["wp"]["blocks"];
 const external_wp_coreData_namespaceObject = window["wp"]["coreData"];
 ;// CONCATENATED MODULE: external ["wp","blockEditor"]
 const external_wp_blockEditor_namespaceObject = window["wp"]["blockEditor"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/constants.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/constants.js
 const PATTERN_TYPES = {
   theme: 'pattern',
   user: 'wp_block'
@@ -108,7 +108,7 @@ const PARTIAL_SYNCING_SUPPORTED_BLOCKS = {
 };
 const PATTERN_OVERRIDES_BINDING_SOURCE = 'core/pattern-overrides';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/store/actions.js
 /**
  * WordPress dependencies
  */
@@ -226,13 +226,13 @@ function setEditingPattern(clientId, isEditing) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/store/constants.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/store/constants.js
 /**
  * Module Constants
  */
 const STORE_NAME = 'core/patterns';
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/store/selectors.js
 /**
  * Returns true if pattern is in the editing state.
  *
@@ -246,7 +246,7 @@ function selectors_isEditingPattern(state, clientId) {
 
 ;// CONCATENATED MODULE: external ["wp","privateApis"]
 const external_wp_privateApis_namespaceObject = window["wp"]["privateApis"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/lock-unlock.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/lock-unlock.js
 /**
  * WordPress dependencies
  */
@@ -256,7 +256,7 @@ const {
   unlock
 } = (0,external_wp_privateApis_namespaceObject.__dangerousOptInToUnstableAPIsOnlyForCoreModules)('I acknowledge private features are not for use in themes or plugins and doing so will break in the next version of WordPress.', '@wordpress/patterns');
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/store/index.js
 /**
  * WordPress dependencies
  */
@@ -302,7 +302,7 @@ const external_wp_components_namespaceObject = window["wp"]["components"];
 const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/api/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/api/index.js
 /**
  * Internal dependencies
  */
@@ -337,7 +337,7 @@ function hasOverridableBlocks(blocks) {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/overrides-panel.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/overrides-panel.js
 /**
  * WordPress dependencies
  */
@@ -382,7 +382,7 @@ const external_wp_notices_namespaceObject = window["wp"]["notices"];
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: external ["wp","htmlEntities"]
 const external_wp_htmlEntities_namespaceObject = window["wp"]["htmlEntities"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/category-selector.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/category-selector.js
 /**
  * WordPress dependencies
  */
@@ -434,7 +434,7 @@ function CategorySelector({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/private-hooks.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/private-hooks.js
 /**
  * WordPress dependencies
  */
@@ -529,7 +529,7 @@ function useAddPatternCategory() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/create-pattern-modal.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/create-pattern-modal.js
 /**
  * WordPress dependencies
  */
@@ -662,7 +662,7 @@ function CreatePatternModalContents({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/duplicate-pattern-modal.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/duplicate-pattern-modal.js
 /**
  * WordPress dependencies
  */
@@ -747,7 +747,7 @@ function DuplicatePatternModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/rename-pattern-modal.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/rename-pattern-modal.js
 /**
  * WordPress dependencies
  */
@@ -850,7 +850,7 @@ function RenamePatternModal({
 
 ;// CONCATENATED MODULE: external ["wp","primitives"]
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/symbol.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-modules/library/symbol.js
 /**
  * WordPress dependencies
  */
@@ -865,7 +865,7 @@ const symbol = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(ext
 });
 /* harmony default export */ const library_symbol = (symbol);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/pattern-convert-button.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/pattern-convert-button.js
 /**
  * WordPress dependencies
  */
@@ -995,7 +995,7 @@ function PatternConvertButton({
 
 ;// CONCATENATED MODULE: external ["wp","url"]
 const external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/patterns-manage-button.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/patterns-manage-button.js
 /**
  * WordPress dependencies
  */
@@ -1067,7 +1067,7 @@ function PatternsManageButton({
 }
 /* harmony default export */ const patterns_manage_button = (PatternsManageButton);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/index.js
 /**
  * WordPress dependencies
  */
@@ -1102,7 +1102,7 @@ function PatternsMenuItems({
 
 ;// CONCATENATED MODULE: external ["wp","a11y"]
 const external_wp_a11y_namespaceObject = window["wp"]["a11y"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/rename-pattern-category-modal.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/rename-pattern-category-modal.js
 /**
  * WordPress dependencies
  */
@@ -1253,7 +1253,7 @@ function RenamePatternCategoryModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/allow-overrides-modal.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/allow-overrides-modal.js
 /**
  * WordPress dependencies
  */
@@ -1375,7 +1375,7 @@ function DisallowOverridesModal({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/pattern-overrides-controls.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/pattern-overrides-controls.js
 /**
  * WordPress dependencies
  */
@@ -1481,7 +1481,7 @@ function PatternOverridesControls({
 }
 /* harmony default export */ const pattern_overrides_controls = (PatternOverridesControls);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/reset-overrides-control.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/reset-overrides-control.js
 /**
  * WordPress dependencies
  */
@@ -1553,7 +1553,7 @@ function ResetOverridesControl(props) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/copy.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-modules/library/copy.js
 /**
  * WordPress dependencies
  */
@@ -1570,7 +1570,7 @@ const copy = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx)(exter
 });
 /* harmony default export */ const library_copy = (copy);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/components/pattern-overrides-block-controls.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/components/pattern-overrides-block-controls.js
 /**
  * WordPress dependencies
  */
@@ -1695,7 +1695,7 @@ function PatternOverridesBlockControls() {
   }) : null;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/private-apis.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/private-apis.js
 /**
  * Internal dependencies
  */
@@ -1736,7 +1736,7 @@ lock(privateApis, {
   PARTIAL_SYNCING_SUPPORTED_BLOCKS: PARTIAL_SYNCING_SUPPORTED_BLOCKS
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/patterns/build-modules/index.js
 /**
  * Internal dependencies
  */

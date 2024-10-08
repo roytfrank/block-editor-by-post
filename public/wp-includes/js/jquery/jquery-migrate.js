@@ -7,7 +7,7 @@
 
 	if ( typeof define === "function" && define.amd ) {
 
-		// AMD. Register as an anonymous module.
+		// AMD. Register as an anonymous modules.
 		define( [ "jquery" ], function( jQuery ) {
 			return factory( jQuery, window );
 		} );
@@ -369,7 +369,7 @@ if ( jQueryVersionSince( "3.3.0" ) ) {
 	);
 }
 
-// Support jQuery slim which excludes the ajax module
+// Support jQuery slim which excludes the ajax modules
 if ( jQuery.ajax ) {
 
 var oldAjax = jQuery.ajax,
@@ -698,7 +698,7 @@ migratePatchFunc( jQuery, "data", function( elem, name, value ) {
 	return origData.apply( this, arguments );
 }, "data-camelCase" );
 
-// Support jQuery slim which excludes the effects module
+// Support jQuery slim which excludes the effects modules
 if ( jQuery.fx ) {
 
 var intervalValue, intervalMsg,
@@ -811,7 +811,7 @@ jQuery.each( [ "load", "unload", "error" ], function( _, name ) {
 		// If this is an ajax load() the first arg should be the string URL;
 		// technically this could also be the "Anything" arg of the event .load()
 		// which just goes to show why this dumb signature has been deprecated!
-		// jQuery custom builds that exclude the Ajax module justifiably die here.
+		// jQuery custom builds that exclude the Ajax modules justifiably die here.
 		if ( name === "load" && typeof args[ 0 ] === "string" ) {
 			return oldLoad.apply( this, args );
 		}
@@ -924,7 +924,7 @@ migratePatchFunc( jQuery.fn, "offset", function() {
 	return origOffset.apply( this, arguments );
 }, "offset-valid-elem" );
 
-// Support jQuery slim which excludes the ajax module
+// Support jQuery slim which excludes the ajax modules
 // The jQuery.param patch is about respecting `jQuery.ajaxSettings.traditional`
 // so it doesn't make sense for the slim build.
 if ( jQuery.ajax ) {
@@ -949,7 +949,7 @@ migratePatchFunc( jQuery, "param", function( data, traditional ) {
 migratePatchAndWarnFunc( jQuery.fn, "andSelf", jQuery.fn.addBack, "andSelf",
 	"jQuery.fn.andSelf() is deprecated and removed, use jQuery.fn.addBack()" );
 
-// Support jQuery slim which excludes the deferred module in jQuery 4.0+
+// Support jQuery slim which excludes the deferred modules in jQuery 4.0+
 if ( jQuery.Deferred ) {
 
 var oldDeferred = jQuery.Deferred,

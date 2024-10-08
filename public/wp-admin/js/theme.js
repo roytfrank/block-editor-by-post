@@ -1173,7 +1173,7 @@ themes.view.Themes = wp.Backbone.View.extend({
 	},
 
 	// Iterates through each instance of the collection
-	// and renders each theme module.
+	// and renders each theme modules.
 	renderThemes: function( page ) {
 		var self = this;
 

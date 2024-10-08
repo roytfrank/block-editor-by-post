@@ -212,7 +212,7 @@ class getID3
 
 
 
-	// module-specific options
+	// modules-specific options
 
 	/** archive.rar
 	 * if true use PHP RarArchive extension, if false (non-extension parsing not yet written in getID3)
@@ -743,16 +743,16 @@ class getID3
 			// set mime type
 			$this->info['mime_type'] = $determined_format['mime_type'];
 
-			// supported format signature pattern detected, but module deleted
+			// supported format signature pattern detected, but modules deleted
 			if (!file_exists(GETID3_INCLUDEPATH.$determined_format['include'])) {
 				fclose($this->fp);
-				return $this->error('Format not supported, module "'.$determined_format['include'].'" was removed.');
+				return $this->error('Format not supported, modules "'.$determined_format['include'].'" was removed.');
 			}
 
-			// module requires mb_convert_encoding/iconv support
+			// modules requires mb_convert_encoding/iconv support
 			// Check encoding/iconv support
 			if (!empty($determined_format['iconv_req']) && !function_exists('mb_convert_encoding') && !function_exists('iconv') && !in_array($this->encoding, array('ISO-8859-1', 'UTF-8', 'UTF-16LE', 'UTF-16BE', 'UTF-16'))) {
-				$errormessage = 'mb_convert_encoding() or iconv() support is required for this module ('.$determined_format['include'].') for encodings other than ISO-8859-1, UTF-8, UTF-16LE, UTF16-BE, UTF-16. ';
+				$errormessage = 'mb_convert_encoding() or iconv() support is required for this modules ('.$determined_format['include'].') for encodings other than ISO-8859-1, UTF-8, UTF-16LE, UTF16-BE, UTF-16. ';
 				if (GETID3_OS_ISWINDOWS) {
 					$errormessage .= 'PHP does not have mb_convert_encoding() or iconv() support. Please enable php_mbstring.dll / php_iconv.dll in php.ini, and copy php_mbstring.dll / iconv.dll from c:/php/dlls to c:/windows/system32';
 				} else {
@@ -761,22 +761,22 @@ class getID3
 				return $this->error($errormessage);
 			}
 
-			// include module
+			// include modules
 			include_once(GETID3_INCLUDEPATH.$determined_format['include']);
 
-			// instantiate module class
-			$class_name = 'getid3_'.$determined_format['module'];
+			// instantiate modules class
+			$class_name = 'getid3_'.$determined_format['modules'];
 			if (!class_exists($class_name)) {
-				return $this->error('Format not supported, module "'.$determined_format['include'].'" is corrupt.');
+				return $this->error('Format not supported, modules "'.$determined_format['include'].'" is corrupt.');
 			}
 			$class = new $class_name($this);
 
-			// set module-specific options
+			// set modules-specific options
 			foreach (get_object_vars($this) as $getid3_object_vars_key => $getid3_object_vars_value) {
 				if (preg_match('#^options_([^_]+)_([^_]+)_(.+)$#i', $getid3_object_vars_key, $matches)) {
 					list($dummy, $GOVgroup, $GOVmodule, $GOVsetting) = $matches;
 					$GOVgroup = (($GOVgroup == 'audiovideo') ? 'audio-video' : $GOVgroup); // variable names can only contain 0-9a-z_ so standardize here
-					if (($GOVgroup == $determined_format['group']) && ($GOVmodule == $determined_format['module'])) {
+					if (($GOVgroup == $determined_format['group']) && ($GOVmodule == $determined_format['modules'])) {
 						$class->$GOVsetting = $getid3_object_vars_value;
 					}
 				}
@@ -922,7 +922,7 @@ class getID3
 				'ac3'  => array(
 							'pattern'   => '^\\x0B\\x77',
 							'group'     => 'audio',
-							'module'    => 'ac3',
+							'modules'    => 'ac3',
 							'mime_type' => 'audio/ac3',
 						),
 
@@ -930,7 +930,7 @@ class getID3
 				'adif' => array(
 							'pattern'   => '^ADIF',
 							'group'     => 'audio',
-							'module'    => 'aac',
+							'modules'    => 'aac',
 							'mime_type' => 'audio/aac',
 							'fail_ape'  => 'WARNING',
 						),
@@ -940,7 +940,7 @@ class getID3
 				'aa'   => array(
 							'pattern'   => '^.{4}\\x57\\x90\\x75\\x36',
 							'group'     => 'audio',
-							'module'    => 'aa',
+							'modules'    => 'aa',
 							'mime_type' => 'audio/audible',
 						),
 */
@@ -948,7 +948,7 @@ class getID3
 				'adts' => array(
 							'pattern'   => '^\\xFF[\\xF0-\\xF1\\xF8-\\xF9]',
 							'group'     => 'audio',
-							'module'    => 'aac',
+							'modules'    => 'aac',
 							'mime_type' => 'audio/aac',
 							'fail_ape'  => 'WARNING',
 						),
@@ -958,7 +958,7 @@ class getID3
 				'au'   => array(
 							'pattern'   => '^\\.snd',
 							'group'     => 'audio',
-							'module'    => 'au',
+							'modules'    => 'au',
 							'mime_type' => 'audio/basic',
 						),
 
@@ -966,7 +966,7 @@ class getID3
 				'amr'  => array(
 							'pattern'   => '^\\x23\\x21AMR\\x0A', // #!AMR[0A]
 							'group'     => 'audio',
-							'module'    => 'amr',
+							'modules'    => 'amr',
 							'mime_type' => 'audio/amr',
 						),
 
@@ -974,7 +974,7 @@ class getID3
 				'avr'  => array(
 							'pattern'   => '^2BIT',
 							'group'     => 'audio',
-							'module'    => 'avr',
+							'modules'    => 'avr',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -982,7 +982,7 @@ class getID3
 				'bonk' => array(
 							'pattern'   => '^\\x00(BONK|INFO|META| ID3)',
 							'group'     => 'audio',
-							'module'    => 'bonk',
+							'modules'    => 'bonk',
 							'mime_type' => 'audio/xmms-bonk',
 						),
 
@@ -990,7 +990,7 @@ class getID3
 				'dsf'  => array(
 							'pattern'   => '^DSD ',  // including trailing space: 44 53 44 20
 							'group'     => 'audio',
-							'module'    => 'dsf',
+							'modules'    => 'dsf',
 							'mime_type' => 'audio/dsd',
 						),
 
@@ -998,7 +998,7 @@ class getID3
 				'dss'  => array(
 							'pattern'   => '^[\\x02-\\x08]ds[s2]',
 							'group'     => 'audio',
-							'module'    => 'dss',
+							'modules'    => 'dss',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1006,7 +1006,7 @@ class getID3
 				'dsdiff' => array(
 							'pattern'   => '^FRM8',
 							'group'     => 'audio',
-							'module'    => 'dsdiff',
+							'modules'    => 'dsdiff',
 							'mime_type' => 'audio/dsd',
 						),
 
@@ -1014,7 +1014,7 @@ class getID3
 				'dts'  => array(
 							'pattern'   => '^\\x7F\\xFE\\x80\\x01',
 							'group'     => 'audio',
-							'module'    => 'dts',
+							'modules'    => 'dts',
 							'mime_type' => 'audio/dts',
 						),
 
@@ -1022,7 +1022,7 @@ class getID3
 				'flac' => array(
 							'pattern'   => '^fLaC',
 							'group'     => 'audio',
-							'module'    => 'flac',
+							'modules'    => 'flac',
 							'mime_type' => 'audio/flac',
 						),
 
@@ -1030,7 +1030,7 @@ class getID3
 				'la'   => array(
 							'pattern'   => '^LA0[2-4]',
 							'group'     => 'audio',
-							'module'    => 'la',
+							'modules'    => 'la',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1038,7 +1038,7 @@ class getID3
 				'lpac' => array(
 							'pattern'   => '^LPAC',
 							'group'     => 'audio',
-							'module'    => 'lpac',
+							'modules'    => 'lpac',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1046,7 +1046,7 @@ class getID3
 				'midi' => array(
 							'pattern'   => '^MThd',
 							'group'     => 'audio',
-							'module'    => 'midi',
+							'modules'    => 'midi',
 							'mime_type' => 'audio/midi',
 						),
 
@@ -1054,7 +1054,7 @@ class getID3
 				'mac'  => array(
 							'pattern'   => '^MAC ',
 							'group'     => 'audio',
-							'module'    => 'monkey',
+							'modules'    => 'monkey',
 							'mime_type' => 'audio/x-monkeys-audio',
 						),
 
@@ -1064,7 +1064,7 @@ class getID3
 							//'pattern'   => '^.{1080}(M\\.K\\.|M!K!|FLT4|FLT8|[5-9]CHN|[1-3][0-9]CH)', // has been known to produce false matches in random files (e.g. JPEGs), leave out until more precise matching available
 							'pattern'   => '^.{1080}(M\\.K\\.)',
 							'group'     => 'audio',
-							'module'    => 'mod',
+							'modules'    => 'mod',
 							'option'    => 'mod',
 							'mime_type' => 'audio/mod',
 						),
@@ -1073,7 +1073,7 @@ class getID3
 				'it'   => array(
 							'pattern'   => '^IMPM',
 							'group'     => 'audio',
-							'module'    => 'mod',
+							'modules'    => 'mod',
 							//'option'    => 'it',
 							'mime_type' => 'audio/it',
 						),
@@ -1082,7 +1082,7 @@ class getID3
 				'xm'   => array(
 							'pattern'   => '^Extended Module',
 							'group'     => 'audio',
-							'module'    => 'mod',
+							'modules'    => 'mod',
 							//'option'    => 'xm',
 							'mime_type' => 'audio/xm',
 						),
@@ -1091,7 +1091,7 @@ class getID3
 				's3m'  => array(
 							'pattern'   => '^.{44}SCRM',
 							'group'     => 'audio',
-							'module'    => 'mod',
+							'modules'    => 'mod',
 							//'option'    => 's3m',
 							'mime_type' => 'audio/s3m',
 						),
@@ -1100,7 +1100,7 @@ class getID3
 				'mpc'  => array(
 							'pattern'   => '^(MPCK|MP\\+)',
 							'group'     => 'audio',
-							'module'    => 'mpc',
+							'modules'    => 'mpc',
 							'mime_type' => 'audio/x-musepack',
 						),
 
@@ -1108,7 +1108,7 @@ class getID3
 				'mp3'  => array(
 							'pattern'   => '^\\xFF[\\xE2-\\xE7\\xF2-\\xF7\\xFA-\\xFF][\\x00-\\x0B\\x10-\\x1B\\x20-\\x2B\\x30-\\x3B\\x40-\\x4B\\x50-\\x5B\\x60-\\x6B\\x70-\\x7B\\x80-\\x8B\\x90-\\x9B\\xA0-\\xAB\\xB0-\\xBB\\xC0-\\xCB\\xD0-\\xDB\\xE0-\\xEB\\xF0-\\xFB]',
 							'group'     => 'audio',
-							'module'    => 'mp3',
+							'modules'    => 'mp3',
 							'mime_type' => 'audio/mpeg',
 						),
 
@@ -1116,7 +1116,7 @@ class getID3
 				'ofr'  => array(
 							'pattern'   => '^(\\*RIFF|OFR)',
 							'group'     => 'audio',
-							'module'    => 'optimfrog',
+							'modules'    => 'optimfrog',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1124,7 +1124,7 @@ class getID3
 				'rkau' => array(
 							'pattern'   => '^RKA',
 							'group'     => 'audio',
-							'module'    => 'rkau',
+							'modules'    => 'rkau',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1132,7 +1132,7 @@ class getID3
 				'shn'  => array(
 							'pattern'   => '^ajkg',
 							'group'     => 'audio',
-							'module'    => 'shorten',
+							'modules'    => 'shorten',
 							'mime_type' => 'audio/xmms-shn',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1142,7 +1142,7 @@ class getID3
 				'tak'  => array(
 							'pattern'   => '^tBaK',
 							'group'     => 'audio',
-							'module'    => 'tak',
+							'modules'    => 'tak',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1150,7 +1150,7 @@ class getID3
 				'tta'  => array(
 							'pattern'   => '^TTA',  // could also be '^TTA(\\x01|\\x02|\\x03|2|1)'
 							'group'     => 'audio',
-							'module'    => 'tta',
+							'modules'    => 'tta',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1158,7 +1158,7 @@ class getID3
 				'voc'  => array(
 							'pattern'   => '^Creative Voice File',
 							'group'     => 'audio',
-							'module'    => 'voc',
+							'modules'    => 'voc',
 							'mime_type' => 'audio/voc',
 						),
 
@@ -1166,7 +1166,7 @@ class getID3
 				'vqf'  => array(
 							'pattern'   => '^TWIN',
 							'group'     => 'audio',
-							'module'    => 'vqf',
+							'modules'    => 'vqf',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1174,7 +1174,7 @@ class getID3
 				'wv'   => array(
 							'pattern'   => '^wvpk',
 							'group'     => 'audio',
-							'module'    => 'wavpack',
+							'modules'    => 'wavpack',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1185,7 +1185,7 @@ class getID3
 				'asf'  => array(
 							'pattern'   => '^\\x30\\x26\\xB2\\x75\\x8E\\x66\\xCF\\x11\\xA6\\xD9\\x00\\xAA\\x00\\x62\\xCE\\x6C',
 							'group'     => 'audio-video',
-							'module'    => 'asf',
+							'modules'    => 'asf',
 							'mime_type' => 'video/x-ms-asf',
 							'iconv_req' => false,
 						),
@@ -1194,7 +1194,7 @@ class getID3
 				'bink' => array(
 							'pattern'   => '^(BIK|SMK)',
 							'group'     => 'audio-video',
-							'module'    => 'bink',
+							'modules'    => 'bink',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1202,7 +1202,7 @@ class getID3
 				'flv' => array(
 							'pattern'   => '^FLV[\\x01]',
 							'group'     => 'audio-video',
-							'module'    => 'flv',
+							'modules'    => 'flv',
 							'mime_type' => 'video/x-flv',
 						),
 
@@ -1210,7 +1210,7 @@ class getID3
 				'ivf' => array(
 							'pattern'   => '^DKIF',
 							'group'     => 'audio-video',
-							'module'    => 'ivf',
+							'modules'    => 'ivf',
 							'mime_type' => 'video/x-ivf',
 						),
 
@@ -1218,7 +1218,7 @@ class getID3
 				'matroska' => array(
 							'pattern'   => '^\\x1A\\x45\\xDF\\xA3',
 							'group'     => 'audio-video',
-							'module'    => 'matroska',
+							'modules'    => 'matroska',
 							'mime_type' => 'video/x-matroska', // may also be audio/x-matroska
 						),
 
@@ -1226,7 +1226,7 @@ class getID3
 				'mpeg' => array(
 							'pattern'   => '^\\x00\\x00\\x01[\\xB3\\xBA]',
 							'group'     => 'audio-video',
-							'module'    => 'mpeg',
+							'modules'    => 'mpeg',
 							'mime_type' => 'video/mpeg',
 						),
 
@@ -1234,7 +1234,7 @@ class getID3
 				'nsv'  => array(
 							'pattern'   => '^NSV[sf]',
 							'group'     => 'audio-video',
-							'module'    => 'nsv',
+							'modules'    => 'nsv',
 							'mime_type' => 'application/octet-stream',
 						),
 
@@ -1242,7 +1242,7 @@ class getID3
 				'ogg'  => array(
 							'pattern'   => '^OggS',
 							'group'     => 'audio',
-							'module'    => 'ogg',
+							'modules'    => 'ogg',
 							'mime_type' => 'application/ogg',
 							'fail_id3'  => 'WARNING',
 							'fail_ape'  => 'WARNING',
@@ -1252,7 +1252,7 @@ class getID3
 				'quicktime' => array(
 							'pattern'   => '^.{4}(cmov|free|ftyp|mdat|moov|pnot|skip|wide)',
 							'group'     => 'audio-video',
-							'module'    => 'quicktime',
+							'modules'    => 'quicktime',
 							'mime_type' => 'video/quicktime',
 						),
 
@@ -1260,7 +1260,7 @@ class getID3
 				'riff' => array(
 							'pattern'   => '^(RIFF|SDSS|FORM)',
 							'group'     => 'audio-video',
-							'module'    => 'riff',
+							'modules'    => 'riff',
 							'mime_type' => 'audio/wav',
 							'fail_ape'  => 'WARNING',
 						),
@@ -1269,7 +1269,7 @@ class getID3
 				'real' => array(
 							'pattern'   => '^\\.(RMF|ra)',
 							'group'     => 'audio-video',
-							'module'    => 'real',
+							'modules'    => 'real',
 							'mime_type' => 'audio/x-realaudio',
 						),
 
@@ -1277,7 +1277,7 @@ class getID3
 				'swf' => array(
 							'pattern'   => '^(F|C)WS',
 							'group'     => 'audio-video',
-							'module'    => 'swf',
+							'modules'    => 'swf',
 							'mime_type' => 'application/x-shockwave-flash',
 						),
 
@@ -1285,7 +1285,7 @@ class getID3
 				'ts' => array(
 							'pattern'   => '^(\\x47.{187}){10,}', // packets are 188 bytes long and start with 0x47 "G".  Check for at least 10 packets matching this pattern
 							'group'     => 'audio-video',
-							'module'    => 'ts',
+							'modules'    => 'ts',
 							'mime_type' => 'video/MP2T',
 						),
 
@@ -1293,7 +1293,7 @@ class getID3
 				'wtv' => array(
 							'pattern'   => '^\\xB7\\xD8\\x00\\x20\\x37\\x49\\xDA\\x11\\xA6\\x4E\\x00\\x07\\xE9\\x5E\\xAD\\x8D',
 							'group'     => 'audio-video',
-							'module'    => 'wtv',
+							'modules'    => 'wtv',
 							'mime_type' => 'video/x-ms-wtv',
 						),
 
@@ -1304,7 +1304,7 @@ class getID3
 				'bmp'  => array(
 							'pattern'   => '^BM',
 							'group'     => 'graphic',
-							'module'    => 'bmp',
+							'modules'    => 'bmp',
 							'mime_type' => 'image/bmp',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1314,7 +1314,7 @@ class getID3
 				'gif'  => array(
 							'pattern'   => '^GIF',
 							'group'     => 'graphic',
-							'module'    => 'gif',
+							'modules'    => 'gif',
 							'mime_type' => 'image/gif',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1324,7 +1324,7 @@ class getID3
 				'jpg'  => array(
 							'pattern'   => '^\\xFF\\xD8\\xFF',
 							'group'     => 'graphic',
-							'module'    => 'jpg',
+							'modules'    => 'jpg',
 							'mime_type' => 'image/jpeg',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1334,7 +1334,7 @@ class getID3
 				'pcd'  => array(
 							'pattern'   => '^.{2048}PCD_IPI\\x00',
 							'group'     => 'graphic',
-							'module'    => 'pcd',
+							'modules'    => 'pcd',
 							'mime_type' => 'image/x-photo-cd',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1345,7 +1345,7 @@ class getID3
 				'png'  => array(
 							'pattern'   => '^\\x89\\x50\\x4E\\x47\\x0D\\x0A\\x1A\\x0A',
 							'group'     => 'graphic',
-							'module'    => 'png',
+							'modules'    => 'png',
 							'mime_type' => 'image/png',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1356,7 +1356,7 @@ class getID3
 				'svg'  => array(
 							'pattern'   => '(<!DOCTYPE svg PUBLIC |xmlns="http://www\\.w3\\.org/2000/svg")',
 							'group'     => 'graphic',
-							'module'    => 'svg',
+							'modules'    => 'svg',
 							'mime_type' => 'image/svg+xml',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1367,7 +1367,7 @@ class getID3
 				'tiff' => array(
 							'pattern'   => '^(II\\x2A\\x00|MM\\x00\\x2A)',
 							'group'     => 'graphic',
-							'module'    => 'tiff',
+							'modules'    => 'tiff',
 							'mime_type' => 'image/tiff',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1378,7 +1378,7 @@ class getID3
 				'efax'  => array(
 							'pattern'   => '^\\xDC\\xFE',
 							'group'     => 'graphic',
-							'module'    => 'efax',
+							'modules'    => 'efax',
 							'mime_type' => 'image/efax',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1391,7 +1391,7 @@ class getID3
 				'iso'  => array(
 							'pattern'   => '^.{32769}CD001',
 							'group'     => 'misc',
-							'module'    => 'iso',
+							'modules'    => 'iso',
 							'mime_type' => 'application/octet-stream',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1402,7 +1402,7 @@ class getID3
 				'hpk'  => array(
 							'pattern'   => '^BPUL',
 							'group'     => 'archive',
-							'module'    => 'hpk',
+							'modules'    => 'hpk',
 							'mime_type' => 'application/octet-stream',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1412,7 +1412,7 @@ class getID3
 				'rar'  => array(
 							'pattern'   => '^Rar\\!',
 							'group'     => 'archive',
-							'module'    => 'rar',
+							'modules'    => 'rar',
 							'mime_type' => 'application/vnd.rar',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1422,7 +1422,7 @@ class getID3
 				'szip' => array(
 							'pattern'   => '^SZ\\x0A\\x04',
 							'group'     => 'archive',
-							'module'    => 'szip',
+							'modules'    => 'szip',
 							'mime_type' => 'application/octet-stream',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1432,7 +1432,7 @@ class getID3
 				'tar'  => array(
 							'pattern'   => '^.{100}[0-9\\x20]{7}\\x00[0-9\\x20]{7}\\x00[0-9\\x20]{7}\\x00[0-9\\x20\\x00]{12}[0-9\\x20\\x00]{12}',
 							'group'     => 'archive',
-							'module'    => 'tar',
+							'modules'    => 'tar',
 							'mime_type' => 'application/x-tar',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1442,7 +1442,7 @@ class getID3
 				'gz'  => array(
 							'pattern'   => '^\\x1F\\x8B\\x08',
 							'group'     => 'archive',
-							'module'    => 'gzip',
+							'modules'    => 'gzip',
 							'mime_type' => 'application/gzip',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1452,7 +1452,7 @@ class getID3
 				'zip'  => array(
 							'pattern'   => '^PK\\x03\\x04',
 							'group'     => 'archive',
-							'module'    => 'zip',
+							'modules'    => 'zip',
 							'mime_type' => 'application/zip',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1462,7 +1462,7 @@ class getID3
 				'xz'  => array(
 							'pattern'   => '^\\xFD7zXZ\\x00',
 							'group'     => 'archive',
-							'module'    => 'xz',
+							'modules'    => 'xz',
 							'mime_type' => 'application/x-xz',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1472,7 +1472,7 @@ class getID3
 				'7zip'  => array(
 							'pattern'   => '^7z\\xBC\\xAF\\x27\\x1C',
 							'group'     => 'archive',
-							'module'    => '7zip',
+							'modules'    => '7zip',
 							'mime_type' => 'application/x-7z-compressed',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1485,7 +1485,7 @@ class getID3
 				'par2' => array (
 							'pattern'   => '^PAR2\\x00PKT',
 							'group'     => 'misc',
-							'module'    => 'par2',
+							'modules'    => 'par2',
 							'mime_type' => 'application/octet-stream',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1495,7 +1495,7 @@ class getID3
 				'pdf'  => array(
 							'pattern'   => '^\\x25PDF',
 							'group'     => 'misc',
-							'module'    => 'pdf',
+							'modules'    => 'pdf',
 							'mime_type' => 'application/pdf',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1505,7 +1505,7 @@ class getID3
 				'msoffice' => array(
 							'pattern'   => '^\\xD0\\xCF\\x11\\xE0\\xA1\\xB1\\x1A\\xE1', // D0CF11E == DOCFILE == Microsoft Office Document
 							'group'     => 'misc',
-							'module'    => 'msoffice',
+							'modules'    => 'msoffice',
 							'mime_type' => 'application/octet-stream',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1515,7 +1515,7 @@ class getID3
 				'torrent' => array(
 							'pattern'   => '^(d8\\:announce|d7\\:comment)',
 							'group'     => 'misc',
-							'module'    => 'torrent',
+							'modules'    => 'torrent',
 							'mime_type' => 'application/x-bittorrent',
 							'fail_id3'  => 'ERROR',
 							'fail_ape'  => 'ERROR',
@@ -1525,7 +1525,7 @@ class getID3
 				 'cue' => array(
 							'pattern'   => '', // empty pattern means cannot be automatically detected, will fall through all other formats and match based on filename and very basic file contents
 							'group'     => 'misc',
-							'module'    => 'cue',
+							'modules'    => 'cue',
 							'mime_type' => 'application/octet-stream',
 						   ),
 
@@ -1552,7 +1552,7 @@ class getID3
 			// The /s switch on preg_match() forces preg_match() NOT to treat
 			// newline (0x0A) characters as special chars but do a binary match
 			if (!empty($info['pattern']) && preg_match('#'.$info['pattern'].'#s', $filedata)) {
-				$info['include'] = 'module.'.$info['group'].'.'.$info['module'].'.php';
+				$info['include'] = 'modules.'.$info['group'].'.'.$info['modules'].'.php';
 				return $info;
 			}
 		}
@@ -1563,14 +1563,14 @@ class getID3
 			// use assume format on these if format detection failed
 			$GetFileFormatArray = $this->GetFileFormatArray();
 			$info = $GetFileFormatArray['mp3'];
-			$info['include'] = 'module.'.$info['group'].'.'.$info['module'].'.php';
+			$info['include'] = 'modules.'.$info['group'].'.'.$info['modules'].'.php';
 			return $info;
 		} elseif (preg_match('#\\.mp[cp\\+]$#i', $filename) && preg_match('#[\x00\x01\x10\x11\x40\x41\x50\x51\x80\x81\x90\x91\xC0\xC1\xD0\xD1][\x20-37][\x00\x20\x40\x60\x80\xA0\xC0\xE0]#s', $filedata)) {
 			// old-format (SV4-SV6) Musepack header that has a very loose pattern match and could falsely match other data (e.g. corrupt mp3)
 			// only enable this pattern check if the filename ends in .mpc/mpp/mp+
 			$GetFileFormatArray = $this->GetFileFormatArray();
 			$info = $GetFileFormatArray['mpc'];
-			$info['include'] = 'module.'.$info['group'].'.'.$info['module'].'.php';
+			$info['include'] = 'modules.'.$info['group'].'.'.$info['modules'].'.php';
 			return $info;
 		} elseif (preg_match('#\\.cue$#i', $filename) && preg_match('#FILE "[^"]+" (BINARY|MOTOROLA|AIFF|WAVE|MP3)#', $filedata)) {
 			// there's not really a useful consistent "magic" at the beginning of .cue files to identify them
@@ -1578,7 +1578,7 @@ class getID3
 			// and verify there's at least one instance of "TRACK xx AUDIO" in the file
 			$GetFileFormatArray = $this->GetFileFormatArray();
 			$info = $GetFileFormatArray['cue'];
-			$info['include']   = 'module.'.$info['group'].'.'.$info['module'].'.php';
+			$info['include']   = 'modules.'.$info['group'].'.'.$info['modules'].'.php';
 			return $info;
 		}
 
@@ -2071,11 +2071,11 @@ class getID3
 	 * @throws getid3_exception
 	 */
 	public function include_module($name) {
-		//if (!file_exists($this->include_path.'module.'.$name.'.php')) {
-		if (!file_exists(GETID3_INCLUDEPATH.'module.'.$name.'.php')) {
-			throw new getid3_exception('Required module.'.$name.'.php is missing.');
+		//if (!file_exists($this->include_path.'modules.'.$name.'.php')) {
+		if (!file_exists(GETID3_INCLUDEPATH.'modules.'.$name.'.php')) {
+			throw new getid3_exception('Required modules.'.$name.'.php is missing.');
 		}
-		include_once(GETID3_INCLUDEPATH.'module.'.$name.'.php');
+		include_once(GETID3_INCLUDEPATH.'modules.'.$name.'.php');
 		return true;
 	}
 

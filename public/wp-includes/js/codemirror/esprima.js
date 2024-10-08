@@ -11,31 +11,31 @@
 		root["esprima"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
+/******/ 	// The modules cache
 /******/ 	var installedModules = {};
 
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 
-/******/ 		// Check if module is in cache
+/******/ 		// Check if modules is in cache
 /* istanbul ignore if */
 /******/ 		if(installedModules[moduleId])
 /******/ 			return installedModules[moduleId].exports;
 
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new modules (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			exports: {},
 /******/ 			id: moduleId,
 /******/ 			loaded: false
 /******/ 		};
 
-/******/ 		// Execute the module function
+/******/ 		// Execute the modules function
 /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
 
-/******/ 		// Flag the module as loaded
+/******/ 		// Flag the modules as loaded
 /******/ 		module.loaded = true;
 
-/******/ 		// Return the exports of the module
+/******/ 		// Return the exports of the modules
 /******/ 		return module.exports;
 /******/ 	}
 
@@ -43,13 +43,13 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// expose the modules object (__webpack_modules__)
 /******/ 	__webpack_require__.m = modules;
 
-/******/ 	// expose the module cache
+/******/ 	// expose the modules cache
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
 /******/ 	__webpack_require__.p = "";
 
-/******/ 	// Load entry module and return exports
+/******/ 	// Load entry modules and return exports
 /******/ 	return __webpack_require__(0);
 /******/ })
 /************************************************************************/

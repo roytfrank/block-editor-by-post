@@ -373,7 +373,7 @@ final class WP_Style_Engine {
 	 * @param string[] $css_declarations An associative array of CSS definitions,
 	 *                                   e.g. `array( "$property" => "$value", "$property" => "$value" )`.
 	 * @param string $rules_group        Optional. A parent CSS selector in the case of nested CSS, or a CSS nested @rule,
-	 *                                   such as `@media (min-width: 80rem)` or `@layer module`.
+	 *                                   such as `@media (min-width: 80rem)` or `@layer modules`.
 	 */
 	public static function store_css_rule( $store_name, $css_selector, $css_declarations, $rules_group = '' ) {
 		if ( empty( $store_name ) || empty( $css_selector ) || empty( $css_declarations ) ) {

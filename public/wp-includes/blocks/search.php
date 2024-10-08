@@ -77,7 +77,7 @@ function render_block_core_search( $attributes ) {
 		$input->set_attribute( 'value', get_search_query() );
 		$input->set_attribute( 'placeholder', $attributes['placeholder'] );
 
-		// If it's interactive, enqueue the script module and add the directives.
+		// If it's interactive, enqueue the script modules and add the directives.
 		$is_expandable_searchfield = 'button-only' === $button_position;
 		if ( $is_expandable_searchfield ) {
 			$suffix = wp_scripts_get_suffix();

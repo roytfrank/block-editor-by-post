@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -15,7 +15,7 @@
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -27,12 +27,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -43,7 +43,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -55,7 +55,7 @@ __webpack_require__.d(__webpack_exports__, {
   store: () => (/* reexport */ store)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-modules/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
@@ -65,7 +65,7 @@ __webpack_require__.d(actions_namespaceObject, {
   triggerGuide: () => (triggerGuide)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/nux/build-modules/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -79,7 +79,7 @@ const external_wp_deprecated_namespaceObject = window["wp"]["deprecated"];
 var external_wp_deprecated_default = /*#__PURE__*/__webpack_require__.n(external_wp_deprecated_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-modules/store/reducer.js
 /**
  * WordPress dependencies
  */
@@ -150,7 +150,7 @@ const preferences = (0,external_wp_data_namespaceObject.combineReducers)({
   preferences
 }));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-modules/store/actions.js
 /**
  * Returns an action object that, when dispatched, presents a guide that takes
  * the user through a series of tips step by step.
@@ -204,7 +204,7 @@ function enableTips() {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-modules/store/selectors.js
 /**
  * WordPress dependencies
  */
@@ -278,7 +278,7 @@ function selectors_areTipsEnabled(state) {
   return state.preferences.areTipsEnabled;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-modules/store/index.js
 /**
  * WordPress dependencies
  */
@@ -327,7 +327,7 @@ const external_wp_element_namespaceObject = window["wp"]["element"];
 const external_wp_primitives_namespaceObject = window["wp"]["primitives"];
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-module/library/close.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/icons/build-modules/library/close.js
 /**
  * WordPress dependencies
  */
@@ -342,7 +342,7 @@ const close_close = /*#__PURE__*/(0,external_ReactJSXRuntime_namespaceObject.jsx
 });
 /* harmony default export */ const library_close = (close_close);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/components/dot-tip/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-modules/components/dot-tip/index.js
 /**
  * WordPress dependencies
  */
@@ -438,7 +438,7 @@ function DotTip({
   };
 }))(DotTip));
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/nux/build-modules/index.js
 /**
  * WordPress dependencies
  */

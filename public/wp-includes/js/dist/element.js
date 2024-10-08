@@ -25,30 +25,30 @@ module.exports = window["ReactDOM"];
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
+/******/ 	// The modules cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
+/******/ 		// Check if modules is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new modules (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			// no modules.id needed
+/******/ 			// no modules.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
+/******/
+/******/ 		// Execute the modules function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
+/******/
+/******/ 		// Return the exports of the modules
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -61,12 +61,12 @@ module.exports = window["ReactDOM"];
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -77,7 +77,7 @@ module.exports = window["ReactDOM"];
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -136,7 +136,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external "React"
 const external_React_namespaceObject = window["React"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/create-interpolate-element.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/create-interpolate-element.js
 /**
  * Internal dependencies
  */
@@ -446,7 +446,7 @@ function closeOuterElement(endOffset) {
 }
 /* harmony default export */ const create_interpolate_element = (createInterpolateElement);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/react.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/react.js
 /**
  * External dependencies
  */
@@ -713,7 +713,7 @@ function switchChildrenNodeName(children, nodeName) {
 var external_ReactDOM_ = __webpack_require__(5795);
 // EXTERNAL MODULE: ./node_modules/react-dom/client.js
 var client = __webpack_require__(4140);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/react-platform.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/react-platform.js
 /**
  * External dependencies
  */
@@ -785,7 +785,7 @@ var client = __webpack_require__(4140);
  */
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/utils.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/utils.js
 /**
  * Checks if the provided WP element is empty.
  *
@@ -802,7 +802,7 @@ const isEmptyElement = element => {
   return !element;
 };
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/platform.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/platform.js
 /**
  * Parts of this source were derived and modified from react-native-web,
  * released under the MIT license.
@@ -1344,7 +1344,7 @@ function paramCase(input, options) {
 
 ;// CONCATENATED MODULE: external ["wp","escapeHtml"]
 const external_wp_escapeHtml_namespaceObject = window["wp"]["escapeHtml"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/raw-html.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/raw-html.js
 /**
  * Internal dependencies
  */
@@ -1387,7 +1387,7 @@ function RawHTML({
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/serialize.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/serialize.js
 /**
  * Parts of this source were derived and modified from fast-react-render,
  * released under the MIT license.
@@ -1880,7 +1880,7 @@ function renderStyle(style) {
 }
 /* harmony default export */ const serialize = (renderElement);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/element/build-modules/index.js
 
 
 

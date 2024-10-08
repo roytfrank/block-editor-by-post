@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -31,7 +31,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -44,14 +44,14 @@ __webpack_require__.d(__webpack_exports__, {
   withViewportMatch: () => (/* reexport */ with_viewport_match)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/viewport/build-module/store/actions.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/viewport/build-modules/store/actions.js
 var actions_namespaceObject = {};
 __webpack_require__.r(actions_namespaceObject);
 __webpack_require__.d(actions_namespaceObject, {
   setIsMatching: () => (setIsMatching)
 });
 
-// NAMESPACE OBJECT: ./node_modules/@wordpress/viewport/build-module/store/selectors.js
+// NAMESPACE OBJECT: ./node_modules/@wordpress/viewport/build-modules/store/selectors.js
 var selectors_namespaceObject = {};
 __webpack_require__.r(selectors_namespaceObject);
 __webpack_require__.d(selectors_namespaceObject, {
@@ -62,7 +62,7 @@ __webpack_require__.d(selectors_namespaceObject, {
 const external_wp_compose_namespaceObject = window["wp"]["compose"];
 ;// CONCATENATED MODULE: external ["wp","data"]
 const external_wp_data_namespaceObject = window["wp"]["data"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/reducer.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/store/reducer.js
 /**
  * Reducer returning the viewport state, as keys of breakpoint queries with
  * boolean value representing whether query is matched.
@@ -81,7 +81,7 @@ function reducer(state = {}, action) {
 }
 /* harmony default export */ const store_reducer = (reducer);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/actions.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/store/actions.js
 /**
  * Returns an action object used in signalling that viewport queries have been
  * updated. Values are specified as an object of breakpoint query keys where
@@ -101,7 +101,7 @@ function setIsMatching(values) {
   };
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/selectors.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/store/selectors.js
 /**
  * Returns true if the viewport matches the given query, or false otherwise.
  *
@@ -139,7 +139,7 @@ function isViewportMatch(state, query) {
   return !!state[query];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/store/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/store/index.js
 /**
  * WordPress dependencies
  */
@@ -167,7 +167,7 @@ const store = (0,external_wp_data_namespaceObject.createReduxStore)(STORE_NAME, 
 });
 (0,external_wp_data_namespaceObject.register)(store);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/listener.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/listener.js
 /**
  * WordPress dependencies
  */
@@ -217,7 +217,7 @@ const addDimensionsEventListener = (breakpoints, operators) => {
 
 ;// CONCATENATED MODULE: external "ReactJSXRuntime"
 const external_ReactJSXRuntime_namespaceObject = window["ReactJSXRuntime"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/with-viewport-match.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/with-viewport-match.js
 /**
  * WordPress dependencies
  */
@@ -273,7 +273,7 @@ const withViewportMatch = queries => {
 };
 /* harmony default export */ const with_viewport_match = (withViewportMatch);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/if-viewport-matches.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/if-viewport-matches.js
 /**
  * WordPress dependencies
  */
@@ -309,7 +309,7 @@ const ifViewportMatches = query => (0,external_wp_compose_namespaceObject.create
 }), (0,external_wp_compose_namespaceObject.ifCondition)(props => props.isViewportMatch)]), 'ifViewportMatches');
 /* harmony default export */ const if_viewport_matches = (ifViewportMatches);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/viewport/build-modules/index.js
 /**
  * Internal dependencies
  */

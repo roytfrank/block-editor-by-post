@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 
@@ -31,7 +31,7 @@ __webpack_require__.d(__webpack_exports__, {
 
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/nonce.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/nonce.js
 /**
  * @param {string} nonce
  * @return {import('../types').APIFetchMiddleware & { nonce: string }} A middleware to enhance a request with a nonce.
@@ -65,7 +65,7 @@ function createNonceMiddleware(nonce) {
 }
 /* harmony default export */ const nonce = (createNonceMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/namespace-endpoint.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/namespace-endpoint.js
 /**
  * @type {import('../types').APIFetchMiddleware}
  */
@@ -90,7 +90,7 @@ const namespaceAndEndpointMiddleware = (options, next) => {
 };
 /* harmony default export */ const namespace_endpoint = (namespaceAndEndpointMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/root-url.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/root-url.js
 /**
  * Internal dependencies
  */
@@ -129,7 +129,7 @@ const createRootURLMiddleware = rootURL => (options, next) => {
 
 ;// CONCATENATED MODULE: external ["wp","url"]
 const external_wp_url_namespaceObject = window["wp"]["url"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/preloading.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/preloading.js
 /**
  * WordPress dependencies
  */
@@ -194,7 +194,7 @@ function prepareResponse(responseData, parse) {
 }
 /* harmony default export */ const preloading = (createPreloadingMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/fetch-all-middleware.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/fetch-all-middleware.js
 /**
  * WordPress dependencies
  */
@@ -320,7 +320,7 @@ const fetchAllMiddleware = async (options, next) => {
 };
 /* harmony default export */ const fetch_all_middleware = (fetchAllMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/http-v1.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/http-v1.js
 /**
  * Set of HTTP methods which are eligible to be overridden.
  *
@@ -365,7 +365,7 @@ const httpV1Middleware = (options, next) => {
 };
 /* harmony default export */ const http_v1 = (httpV1Middleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/user-locale.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/user-locale.js
 /**
  * WordPress dependencies
  */
@@ -389,7 +389,7 @@ const userLocaleMiddleware = (options, next) => {
 };
 /* harmony default export */ const user_locale = (userLocaleMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/utils/response.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/utils/response.js
 /**
  * WordPress dependencies
  */
@@ -465,7 +465,7 @@ function parseAndThrowError(response, shouldParseResponse = true) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/media-upload.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/media-upload.js
 /**
  * WordPress dependencies
  */
@@ -543,7 +543,7 @@ const mediaUploadMiddleware = (options, next) => {
 };
 /* harmony default export */ const media_upload = (mediaUploadMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/middlewares/theme-preview.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/middlewares/theme-preview.js
 /**
  * WordPress dependencies
  */
@@ -584,7 +584,7 @@ const createThemePreviewMiddleware = themePath => (options, next) => {
 };
 /* harmony default export */ const theme_preview = (createThemePreviewMiddleware);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/api-fetch/build-modules/index.js
 /**
  * WordPress dependencies
  */

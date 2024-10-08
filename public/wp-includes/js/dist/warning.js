@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -15,12 +15,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 
@@ -29,7 +29,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ warning)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/warning/build-module/utils.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/warning/build-modules/utils.js
 /**
  * Object map tracking messages which have been logged, for use in ensuring a
  * message is only logged once.
@@ -38,7 +38,7 @@ __webpack_require__.d(__webpack_exports__, {
  */
 const logged = new Set();
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/warning/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/warning/build-modules/index.js
 /**
  * Internal dependencies
  */

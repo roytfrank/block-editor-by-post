@@ -438,10 +438,10 @@
   /** Detect free variable `exports`. */
   var freeExports = typeof exports == 'object' && exports && !exports.nodeType && exports;
 
-  /** Detect free variable `module`. */
+  /** Detect free variable `modules`. */
   var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
 
-  /** Detect the popular CommonJS extension `module.exports`. */
+  /** Detect the popular CommonJS extension `modules.exports`. */
   var moduleExports = freeModule && freeModule.exports === freeExports;
 
   /** Detect free variable `process` from Node.js. */
@@ -4522,7 +4522,7 @@
     }
 
     /**
-     * A `baseRest` alias which can be replaced with `identity` by module
+     * A `baseRest` alias which can be replaced with `identity` by modules
      * replacement plugins.
      *
      * @private
@@ -17189,8 +17189,8 @@
     // Use `_.noConflict` to remove Lodash from the global object.
     root._ = _;
 
-    // Define as an anonymous module so, through path mapping, it can be
-    // referenced as the "underscore" module.
+    // Define as an anonymous modules so, through path mapping, it can be
+    // referenced as the "underscore" modules.
     define(function() {
       return _;
     });

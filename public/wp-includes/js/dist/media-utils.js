@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -15,7 +15,7 @@
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -27,12 +27,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -43,7 +43,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -59,7 +59,7 @@ __webpack_require__.d(__webpack_exports__, {
 const external_wp_element_namespaceObject = window["wp"]["element"];
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/components/media-upload/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-modules/components/media-upload/index.js
 /**
  * WordPress dependencies
  */
@@ -486,7 +486,7 @@ class MediaUpload extends external_wp_element_namespaceObject.Component {
 }
 /* harmony default export */ const media_upload = (MediaUpload);
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/components/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-modules/components/index.js
 
 
 ;// CONCATENATED MODULE: external ["wp","apiFetch"]
@@ -494,7 +494,7 @@ const external_wp_apiFetch_namespaceObject = window["wp"]["apiFetch"];
 var external_wp_apiFetch_default = /*#__PURE__*/__webpack_require__.n(external_wp_apiFetch_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","blob"]
 const external_wp_blob_namespaceObject = window["wp"]["blob"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/utils/upload-media.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-modules/utils/upload-media.js
 /**
  * WordPress dependencies
  */
@@ -699,10 +699,10 @@ function createMediaFromFile(file, additionalData) {
   });
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/utils/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-modules/utils/index.js
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/media-utils/build-modules/index.js
 
 
 

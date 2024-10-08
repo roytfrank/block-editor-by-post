@@ -494,7 +494,7 @@ function wp_default_packages_inline_scripts( $scripts ) {
 	);
 
 	/*
-	 * wp-editor module is exposed as window.wp.editor.
+	 * wp-editor modules is exposed as window.wp.editor.
 	 * Problem: there is quite some code expecting window.wp.oldEditor object available under window.wp.editor.
 	 * Solution: fuse the two objects together to maintain backward compatibility.
 	 * For more context, see https://github.com/WordPress/gutenberg/issues/33203.
@@ -2882,7 +2882,7 @@ function wp_get_inline_script_tag( $data, $attributes = array() ) {
 		! $is_html5 &&
 		(
 			! isset( $attributes['type'] ) ||
-			'module' === $attributes['type'] ||
+			'modules' === $attributes['type'] ||
 			str_contains( $attributes['type'], 'javascript' ) ||
 			str_contains( $attributes['type'], 'ecmascript' ) ||
 			str_contains( $attributes['type'], 'jscript' ) ||

@@ -8,8 +8,8 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio-video.matriska.php                             //
-// module for analyzing Matroska containers                    //
+// modules.audio-video.matriska.php                             //
+// modules for analyzing Matroska containers                    //
 // dependencies: NONE                                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////
@@ -301,7 +301,7 @@ class getid3_matroska extends getid3_handler
 
 						switch ($trackarray['CodecID']) {
 							case 'V_MS/VFW/FOURCC':
-								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio-video.riff.php', __FILE__, true);
+								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio-video.riff.php', __FILE__, true);
 
 								$parsed = getid3_riff::ParseBITMAPINFOHEADER($trackarray['CodecPrivate']);
 								$track_info['codec'] = getid3_riff::fourccLookup($parsed['fourcc']);
@@ -355,7 +355,7 @@ class getid3_matroska extends getid3_handler
 							case 'A_MPEG/L2':
 							case 'A_FLAC':
 								$module_dataformat = ($track_info['dataformat'] == 'mp2' ? 'mp3' : ($track_info['dataformat'] == 'eac3' ? 'ac3' : $track_info['dataformat']));
-								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio.'.$module_dataformat.'.php', __FILE__, true);
+								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio.'.$module_dataformat.'.php', __FILE__, true);
 
 								if (!isset($info['matroska']['track_data_offsets'][$trackarray['TrackNumber']])) {
 									$this->warning('Unable to parse audio data ['.basename(__FILE__).':'.__LINE__.'] because $info[matroska][track_data_offsets]['.$trackarray['TrackNumber'].'] not set');
@@ -428,7 +428,7 @@ class getid3_matroska extends getid3_handler
 								}
 								$vorbis_offset -= 1;
 
-								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio.ogg.php', __FILE__, true);
+								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio.ogg.php', __FILE__, true);
 
 								// create temp instance
 								$getid3_temp = new getID3();
@@ -465,7 +465,7 @@ class getid3_matroska extends getid3_handler
 								break;
 
 							case 'A_MS/ACM':
-								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio-video.riff.php', __FILE__, true);
+								getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio-video.riff.php', __FILE__, true);
 
 								$parsed = getid3_riff::parseWAVEFORMATex($trackarray['CodecPrivate']);
 								foreach ($parsed as $sub_key => $value) {

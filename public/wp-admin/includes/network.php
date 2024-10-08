@@ -203,7 +203,7 @@ function network_step1( $errors = false ) {
 			$message       = '<p><strong>' . __( 'Warning:' ) . '</strong> ';
 			$message      .= '<p>' . sprintf(
 				/* translators: %s: mod_rewrite */
-				__( 'Please make sure the Apache %s module is installed as it will be used at the end of this installation.' ),
+				__( 'Please make sure the Apache %s modules is installed as it will be used at the end of this installation.' ),
 				'<code>mod_rewrite</code>'
 			) . '</p>';
 		} elseif ( $is_apache ) {
@@ -211,7 +211,7 @@ function network_step1( $errors = false ) {
 			$message       = '<p><strong>' . __( 'Warning:' ) . '</strong> ';
 			$message      .= sprintf(
 				/* translators: %s: mod_rewrite */
-				__( 'It looks like the Apache %s module is not installed.' ),
+				__( 'It looks like the Apache %s modules is not installed.' ),
 				'<code>mod_rewrite</code>'
 			) . '</p>';
 		}
@@ -219,7 +219,7 @@ function network_step1( $errors = false ) {
 		if ( $got_mod_rewrite || $is_apache ) { // Protect against mod_rewrite mimicry (but ! Apache).
 			$message .= '<p>' . sprintf(
 				/* translators: 1: mod_rewrite, 2: mod_rewrite documentation URL, 3: Google search for mod_rewrite. */
-				__( 'If %1$s is disabled, ask your administrator to enable that module, or look at the <a href="%2$s">Apache documentation</a> or <a href="%3$s">elsewhere</a> for help setting it up.' ),
+				__( 'If %1$s is disabled, ask your administrator to enable that modules, or look at the <a href="%2$s">Apache documentation</a> or <a href="%3$s">elsewhere</a> for help setting it up.' ),
 				'<code>mod_rewrite</code>',
 				'https://httpd.apache.org/docs/mod/mod_rewrite.html',
 				'https://www.google.com/search?q=apache+mod_rewrite'

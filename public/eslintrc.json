@@ -1,0 +1,77 @@
+{
+  "env": {
+    "es6": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "parser": "@babel/eslint-parser",
+  "globals": {
+    "ajaxurl": false,
+    "module": false,
+    "process": false,
+    "require": false,
+    "s": false
+  },
+  "extends": [
+    "plugin:@wordpress/eslint-plugin/recommended-with-formatting"
+  ],
+  "plugins": [
+  ],
+  "rules": {
+    "linebreak-style": 0,
+    "consistent-this": "off",
+    "id-length": "off",
+    "lines-around-comment": "off",
+    "no-unused-expressions": "off",
+    "no-unused-vars": [ "error",
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "no-warning-comments": "off",
+    "one-var": "off",
+    "space-in-parens": ["error", "always"],
+    "wrap-iife": ["error", "inside"],
+    "yoda": ["error", "always",
+      {
+        "onlyEquality": true
+      }
+    ],
+    "comma-dangle": ["error", "never"],
+    "space-unary-ops": ["warn",
+      {
+        "nonwords": false
+      }
+    ],
+    "react/jsx-uses-vars": "error",
+
+    "prefer-const": "off",
+    "object-shorthand": "off",
+
+    "no-var": "off",
+    "no-else-return": "off",
+    "no-lonely-if": "off",
+    "no-undef": "off",
+    "no-useless-return": "off",
+    "no-shadow": "off",
+
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+
+    "jsdoc/newline-after-description": "off",
+    "jsdoc/require-param": "off",
+    "jsdoc/require-returns-description": "off",
+    "jsdoc/check-tag-names": "off",
+    "jsdoc/check-types": "off",
+
+    "@wordpress/no-global-event-listener": "off",
+    "@wordpress/no-unused-vars-before-return": "off",
+    "@wordpress/no-global-active-element": "off"
+  }
+}

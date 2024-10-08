@@ -653,30 +653,30 @@ exports["default"] = keys;
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
+/******/ 	// The modules cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
+/******/ 		// Check if modules is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new modules (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			// no modules.id needed
+/******/ 			// no modules.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
+/******/
+/******/ 		// Execute the modules function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
+/******/
+/******/ 		// Return the exports of the modules
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
@@ -689,12 +689,12 @@ exports["default"] = keys;
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -705,7 +705,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ createMiddleware)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/is-generator.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-modules/is-generator.js
 /* eslint-disable jsdoc/valid-types */
 /**
  * Returns true if the given object is a generator, or false otherwise.
@@ -766,7 +766,7 @@ function isPlainObject(o) {
 
 
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/is-action.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-modules/is-action.js
 /**
  * External dependencies
  */
@@ -798,7 +798,7 @@ function isActionOfType(object, expectedType) {
   return isAction(object) && object.type === expectedType;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/runtime.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-modules/runtime.js
 /**
  * External dependencies
  */
@@ -848,7 +848,7 @@ function createRuntime(controls = {}, dispatch) {
   }, reject));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/redux-routine/build-modules/index.js
 /**
  * Internal dependencies
  */

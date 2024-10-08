@@ -491,30 +491,30 @@ module.exports.remove = removeAccents;
 
 /******/ 	});
 /************************************************************************/
-/******/ 	// The module cache
+/******/ 	// The modules cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
-/******/ 		// Check if module is in cache
+/******/ 		// Check if modules is in cache
 /******/ 		var cachedModule = __webpack_module_cache__[moduleId];
 /******/ 		if (cachedModule !== undefined) {
 /******/ 			return cachedModule.exports;
 /******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
+/******/ 		// Create a new modules (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			// no module.id needed
-/******/ 			// no module.loaded needed
+/******/ 			// no modules.id needed
+/******/ 			// no modules.loaded needed
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
-/******/ 		// Execute the module function
+/******/
+/******/ 		// Execute the modules function
 /******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Return the exports of the module
+/******/
+/******/ 		// Return the exports of the modules
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -527,7 +527,7 @@ module.exports.remove = removeAccents;
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -539,12 +539,12 @@ module.exports.remove = removeAccents;
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -555,7 +555,7 @@ module.exports.remove = removeAccents;
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -595,7 +595,7 @@ __webpack_require__.d(__webpack_exports__, {
   safeDecodeURIComponent: () => (/* reexport */ safeDecodeURIComponent)
 });
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-url.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/is-url.js
 /**
  * Determines whether the given string looks like a URL.
  *
@@ -622,7 +622,7 @@ function isURL(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-email.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/is-email.js
 const EMAIL_REGEXP = /^(mailto:)?[a-z0-9._%+-]+@[a-z0-9][a-z0-9.-]*\.[a-z]{2,63}$/i;
 
 /**
@@ -641,7 +641,7 @@ function isEmail(email) {
   return EMAIL_REGEXP.test(email);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-protocol.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-protocol.js
 /**
  * Returns the protocol part of the URL.
  *
@@ -662,7 +662,7 @@ function getProtocol(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-protocol.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/is-valid-protocol.js
 /**
  * Tests if a url protocol is valid.
  *
@@ -683,7 +683,7 @@ function isValidProtocol(protocol) {
   return /^[a-z\-.\+]+[0-9]*:$/i.test(protocol);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-authority.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-authority.js
 /**
  * Returns the authority part of the URL.
  *
@@ -704,7 +704,7 @@ function getAuthority(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-authority.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/is-valid-authority.js
 /**
  * Checks for invalid characters within the provided authority.
  *
@@ -725,7 +725,7 @@ function isValidAuthority(authority) {
   return /^[^\s#?]+$/.test(authority);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-path.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-path.js
 /**
  * Returns the path part of the URL.
  *
@@ -746,7 +746,7 @@ function getPath(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-path.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/is-valid-path.js
 /**
  * Checks for invalid characters within the provided path.
  *
@@ -767,7 +767,7 @@ function isValidPath(path) {
   return /^[^\s#?]+$/.test(path);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-query-string.js
 /**
  * Returns the query string part of the URL.
  *
@@ -790,7 +790,7 @@ function getQueryString(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/build-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/build-query-string.js
 /**
  * Generates URL-encoded query string using input query data.
  *
@@ -847,7 +847,7 @@ function buildQueryString(data) {
   return string.substr(1);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/is-valid-query-string.js
 /**
  * Checks for invalid characters within the provided query string.
  *
@@ -868,7 +868,7 @@ function isValidQueryString(queryString) {
   return /^[^\s#?\/]+$/.test(queryString);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-path-and-query-string.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-path-and-query-string.js
 /**
  * Internal dependencies
  */
@@ -900,7 +900,7 @@ function getPathAndQueryString(url) {
   return value;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-fragment.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-fragment.js
 /**
  * Returns the fragment part of the URL.
  *
@@ -921,7 +921,7 @@ function getFragment(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/is-valid-fragment.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/is-valid-fragment.js
 /**
  * Checks for invalid characters within the provided fragment.
  *
@@ -942,7 +942,7 @@ function isValidFragment(fragment) {
   return /^#[^\s#?\/]*$/.test(fragment);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/safe-decode-uri-component.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/safe-decode-uri-component.js
 /**
  * Safely decodes a URI component with `decodeURIComponent`. Returns the URI component unmodified if
  * `decodeURIComponent` throws an error.
@@ -959,7 +959,7 @@ function safeDecodeURIComponent(uriComponent) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-query-args.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-query-args.js
 /**
  * Internal dependencies
  */
@@ -1047,7 +1047,7 @@ function getQueryArgs(url) {
   }, Object.create(null));
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/add-query-args.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/add-query-args.js
 /**
  * Internal dependencies
  */
@@ -1089,7 +1089,7 @@ function addQueryArgs(url = '', args) {
   return baseUrl + '?' + buildQueryString(args);
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-query-arg.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-query-arg.js
 /**
  * Internal dependencies
  */
@@ -1120,7 +1120,7 @@ function getQueryArg(url, arg) {
   return getQueryArgs(url)[arg];
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/has-query-arg.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/has-query-arg.js
 /**
  * Internal dependencies
  */
@@ -1143,7 +1143,7 @@ function hasQueryArg(url, arg) {
   return getQueryArg(url, arg) !== undefined;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/remove-query-args.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/remove-query-args.js
 /**
  * Internal dependencies
  */
@@ -1175,7 +1175,7 @@ function removeQueryArgs(url, ...args) {
   return queryString ? baseURL + '?' + queryString : baseURL;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/prepend-http.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/prepend-http.js
 /**
  * Internal dependencies
  */
@@ -1205,7 +1205,7 @@ function prependHTTP(url) {
   return url;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/safe-decode-uri.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/safe-decode-uri.js
 /**
  * Safely decodes a URI with `decodeURI`. Returns the URI unmodified if
  * `decodeURI` throws an error.
@@ -1227,7 +1227,7 @@ function safeDecodeURI(uri) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/filter-url-for-display.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/filter-url-for-display.js
 /**
  * Returns a URL for display.
  *
@@ -1275,7 +1275,7 @@ function filterURLForDisplay(url, maxLength = null) {
 // EXTERNAL MODULE: ./node_modules/remove-accents/index.js
 var remove_accents = __webpack_require__(9681);
 var remove_accents_default = /*#__PURE__*/__webpack_require__.n(remove_accents);
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/clean-for-slug.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/clean-for-slug.js
 /**
  * External dependencies
  */
@@ -1314,7 +1314,7 @@ function cleanForSlug(string) {
   .replace(/(^-+)|(-+$)/g, '');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/get-filename.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/get-filename.js
 /**
  * Returns the filename part of the URL.
  *
@@ -1341,7 +1341,7 @@ function getFilename(url) {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/normalize-path.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/normalize-path.js
 /**
  * Given a path, returns a normalized path where equal query parameter values
  * will be treated as identical, regardless of order they appear in the original
@@ -1377,7 +1377,7 @@ function normalizePath(path) {
   .join('&');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/prepend-https.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/prepend-https.js
 /**
  * Internal dependencies
  */
@@ -1410,7 +1410,7 @@ function prependHTTPS(url) {
   return url.replace(/^http:/, 'https:');
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/url/build-modules/index.js
 
 
 

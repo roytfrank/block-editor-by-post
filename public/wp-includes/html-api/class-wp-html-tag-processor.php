@@ -10,7 +10,7 @@
  * Instead this scans linearly through a document and only parses
  * the HTML tag openers.
  *
- * ### Possible future direction for this module
+ * ### Possible future direction for this modules
  *
  *  - Prune the whitespace when removing classes/attributes: e.g. "a b c" -> "c" not " c".
  *    This would increase the size of the changes for some operations but leave more

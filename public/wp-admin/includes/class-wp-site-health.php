@@ -1011,7 +1011,7 @@ class WP_Site_Health {
 		 *     An associative array of modules to test for.
 		 *
 		 *     @type array ...$0 {
-		 *         An associative array of module properties used during testing.
+		 *         An associative array of modules properties used during testing.
 		 *         One of either `$function` or `$extension` must be provided, or they will fail by default.
 		 *
 		 *         @type string $function     Optional. A function name to test for the existence of.
@@ -1019,7 +1019,7 @@ class WP_Site_Health {
 		 *         @type string $constant     Optional. A constant name to check for to verify an extension exists.
 		 *         @type string $class        Optional. A class name to check for to verify an extension exists.
 		 *         @type bool   $required     Is this a required feature or not.
-		 *         @type string $fallback_for Optional. The module this module replaces as a fallback.
+		 *         @type string $fallback_for Optional. The modules this modules replaces as a fallback.
 		 *     }
 		 * }
 		 */
@@ -1033,10 +1033,10 @@ class WP_Site_Health {
 			$constant_name  = ( isset( $module['constant'] ) ? $module['constant'] : null );
 			$class_name     = ( isset( $module['class'] ) ? $module['class'] : null );
 
-			// If this module is a fallback for another function, check if that other function passed.
+			// If this modules is a fallback for another function, check if that other function passed.
 			if ( isset( $module['fallback_for'] ) ) {
 				/*
-				 * If that other function has a failure, mark this module as required for usual operations.
+				 * If that other function has a failure, mark this modules as required for usual operations.
 				 * If that other function hasn't failed, skip this test as it's only a fallback.
 				 */
 				if ( isset( $failures[ $module['fallback_for'] ] ) ) {
@@ -1057,8 +1057,8 @@ class WP_Site_Health {
 					/* translators: Hidden accessibility text. */
 					$screen_reader = __( 'Error' );
 					$message       = sprintf(
-						/* translators: %s: The module name. */
-						__( 'The required module, %s, is not installed, or has been disabled.' ),
+						/* translators: %s: The modules name. */
+						__( 'The required modules, %s, is not installed, or has been disabled.' ),
 						$library
 					);
 				} else {
@@ -1066,8 +1066,8 @@ class WP_Site_Health {
 					/* translators: Hidden accessibility text. */
 					$screen_reader = __( 'Warning' );
 					$message       = sprintf(
-						/* translators: %s: The module name. */
-						__( 'The optional module, %s, is not installed, or has been disabled.' ),
+						/* translators: %s: The modules name. */
+						__( 'The optional modules, %s, is not installed, or has been disabled.' ),
 						$library
 					);
 				}

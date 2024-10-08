@@ -2,7 +2,7 @@
 /******/ 	"use strict";
 /******/ 	// The require scope
 /******/ 	var __webpack_require__ = {};
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -15,7 +15,7 @@
 /******/ 			return getter;
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -27,12 +27,12 @@
 /******/ 			}
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -43,7 +43,7 @@
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	})();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // ESM COMPAT FLAG
@@ -60,7 +60,7 @@ const external_wp_domReady_namespaceObject = window["wp"]["domReady"];
 var external_wp_domReady_default = /*#__PURE__*/__webpack_require__.n(external_wp_domReady_namespaceObject);
 ;// CONCATENATED MODULE: external ["wp","i18n"]
 const external_wp_i18n_namespaceObject = window["wp"]["i18n"];
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/add-intro-text.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-modules/add-intro-text.js
 /**
  * WordPress dependencies
  */
@@ -90,7 +90,7 @@ function addIntroText() {
   return introText;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/add-container.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-modules/add-container.js
 /**
  * Build the live regions markup.
  *
@@ -115,7 +115,7 @@ function addContainer(ariaLive = 'polite') {
   return container;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/clear.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-modules/clear.js
 /**
  * Clears the a11y-speak-region elements and hides the explanatory text.
  */
@@ -132,7 +132,7 @@ function clear() {
   }
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/filter-message.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-modules/filter-message.js
 let previousMessage = '';
 
 /**
@@ -163,7 +163,7 @@ function filterMessage(message) {
   return message;
 }
 
-;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-module/index.js
+;// CONCATENATED MODULE: ./node_modules/@wordpress/a11y/build-modules/index.js
 /**
  * WordPress dependencies
  */
@@ -202,7 +202,7 @@ external_wp_domReady_default()(setup);
 
 /**
  * Allows you to easily announce dynamic interface updates to screen readers using ARIA live regions.
- * This module is inspired by the `speak` function in `wp-a11y.js`.
+ * This modules is inspired by the `speak` function in `wp-a11y.js`.
  *
  * @param {string} message    The message to be announced by assistive technologies.
  * @param {string} [ariaLive] The politeness level for aria-live; default: 'polite'.

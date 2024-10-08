@@ -37,7 +37,7 @@ class WP_Style_Engine_CSS_Rule {
 
 	/**
 	 * A parent CSS selector in the case of nested CSS, or a CSS nested @rule,
-	 * such as `@media (min-width: 80rem)` or `@layer module`.
+	 * such as `@media (min-width: 80rem)` or `@layer modules`.
 	 *
 	 * @since 6.6.0
 	 * @var string
@@ -56,7 +56,7 @@ class WP_Style_Engine_CSS_Rule {
 	 *                                                                or a WP_Style_Engine_CSS_Declarations object.
 	 *                                                                Default empty array.
 	 * @param string                                    $rules_group  A parent CSS selector in the case of nested CSS, or a CSS nested @rule,
-	 *                                                                such as `@media (min-width: 80rem)` or `@layer module`.
+	 *                                                                such as `@media (min-width: 80rem)` or `@layer modules`.
 	 */
 	public function __construct( $selector = '', $declarations = array(), $rules_group = '' ) {
 		$this->set_selector( $selector );
@@ -108,7 +108,7 @@ class WP_Style_Engine_CSS_Rule {
 	 * @since 6.6.0
 	 *
 	 * @param string $rules_group A parent CSS selector in the case of nested CSS, or a CSS nested @rule,
-	 *                            such as `@media (min-width: 80rem)` or `@layer module`.
+	 *                            such as `@media (min-width: 80rem)` or `@layer modules`.
 	 * @return WP_Style_Engine_CSS_Rule Returns the object to allow chaining of methods.
 	 */
 	public function set_rules_group( $rules_group ) {

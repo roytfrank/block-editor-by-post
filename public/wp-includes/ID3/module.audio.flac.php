@@ -8,16 +8,16 @@
 //  see readme.txt for more details                            //
 /////////////////////////////////////////////////////////////////
 //                                                             //
-// module.audio.flac.php                                       //
-// module for analyzing FLAC and OggFLAC audio files           //
-// dependencies: module.audio.ogg.php                          //
+// modules.audio.flac.php                                       //
+// modules for analyzing FLAC and OggFLAC audio files           //
+// dependencies: modules.audio.ogg.php                          //
 //                                                            ///
 /////////////////////////////////////////////////////////////////
 
 if (!defined('GETID3_INCLUDEPATH')) { // prevent path-exposing attacks that access modules directly on public webservers
 	exit;
 }
-getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'module.audio.ogg.php', __FILE__, true);
+getid3_lib::IncludeDependency(GETID3_INCLUDEPATH.'modules.audio.ogg.php', __FILE__, true);
 
 /**
 * @tutorial http://flac.sourceforge.net/format.html

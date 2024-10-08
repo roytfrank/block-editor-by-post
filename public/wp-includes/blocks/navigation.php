@@ -614,7 +614,7 @@ class WP_Navigation_Block_Renderer {
 	}
 
 	/**
-	 * Handle view script module loading.
+	 * Handle view script modules loading.
 	 *
 	 * @since 6.5.0
 	 *
