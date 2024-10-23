@@ -3,3 +3,6 @@ node_modules
 /conf
 .eslintignore
 .editorconfig
+package.json
+package-lock.json
+composer.json
